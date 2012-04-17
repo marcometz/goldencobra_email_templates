@@ -1,0 +1,5 @@
+en:
+  active_admin:
+    resource:
+  yes: "Yes"
+  no: "No"

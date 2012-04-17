@@ -1,0 +1,1275 @@
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'goldencobra-newsletter-test.goldencobra_newsletter_newsletter_registrations' doesn't exist: SHOW FULL FIELDS FROM `goldencobra_newsletter_newsletter_registrations`
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'goldencobra-newsletter-test.users' doesn't exist: SHOW FULL FIELDS FROM `users`
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'goldencobra-newsletter-test.goldencobra_newsletter_newsletter_registrations' doesn't exist: SHOW FULL FIELDS FROM `goldencobra_newsletter_newsletter_registrations`
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'goldencobra-newsletter-test.users' doesn't exist: SHOW FULL FIELDS FROM `users`
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mGoldencobra::Setting Load (0.4ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` IS NULL AND `goldencobra_settings`.`title` = 'goldencobra' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `goldencobra_settings` (`ancestry`, `created_at`, `title`, `updated_at`, `value`) VALUES (NULL, '2012-04-11 23:13:55', 'goldencobra', '2012-04-11 23:13:55', NULL)[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '1' AND `goldencobra_settings`.`title` = 'page' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `goldencobra_settings` (`ancestry`, `created_at`, `title`, `updated_at`, `value`) VALUES ('1', '2012-04-11 23:13:55', 'page', '2012-04-11 23:13:55', NULL)[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'default_title_tag' AND `goldencobra_settings`.`ancestry` = '1/2' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `goldencobra_settings` (`ancestry`, `created_at`, `title`, `updated_at`, `value`) VALUES ('1/2', '2012-04-11 23:13:55', 'default_title_tag', '2012-04-11 23:13:55', 'Goldencobra')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '1' AND `goldencobra_settings`.`title` = 'article' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `goldencobra_settings` (`ancestry`, `created_at`, `title`, `updated_at`, `value`) VALUES ('1', '2012-04-11 23:13:55', 'article', '2012-04-11 23:13:55', NULL)[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '1/4' AND `goldencobra_settings`.`title` = 'article_index' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `goldencobra_settings` (`ancestry`, `created_at`, `title`, `updated_at`, `value`) VALUES ('1/4', '2012-04-11 23:13:55', 'article_index', '2012-04-11 23:13:55', NULL)[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'link_to_article' AND `goldencobra_settings`.`ancestry` = '1/4/5' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `goldencobra_settings` (`ancestry`, `created_at`, `title`, `updated_at`, `value`) VALUES ('1/4/5', '2012-04-11 23:13:55', 'link_to_article', '2012-04-11 23:13:55', 'weiterlesen')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'url' AND `goldencobra_settings`.`ancestry` = '1' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `goldencobra_settings` (`ancestry`, `created_at`, `title`, `updated_at`, `value`) VALUES ('1', '2012-04-11 23:13:55', 'url', '2012-04-11 23:13:55', 'www.goldencobra.de')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '1' AND `goldencobra_settings`.`title` = 'facebook' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `goldencobra_settings` (`ancestry`, `created_at`, `title`, `updated_at`, `value`) VALUES ('1', '2012-04-11 23:13:55', 'facebook', '2012-04-11 23:13:55', NULL)[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'appid' AND `goldencobra_settings`.`ancestry` = '1/8' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `goldencobra_settings` (`ancestry`, `created_at`, `title`, `updated_at`, `value`) VALUES ('1/8', '2012-04-11 23:13:55', 'appid', '2012-04-11 23:13:55', '123456')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'opengraph_default_image' AND `goldencobra_settings`.`ancestry` = '1/8' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `goldencobra_settings` (`ancestry`, `created_at`, `title`, `updated_at`, `value`) VALUES ('1/8', '2012-04-11 23:13:55', 'opengraph_default_image', '2012-04-11 23:13:55', '/assets/open-graph.png')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'goldencobra-newsletter-test.goldencobra_newsletter_newsletter_registrations' doesn't exist: SHOW FULL FIELDS FROM `goldencobra_newsletter_newsletter_registrations`
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mGoldencobra::Setting Load (0.4ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` IS NULL AND `goldencobra_settings`.`title` = 'goldencobra' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.4ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '1' AND `goldencobra_settings`.`title` = 'page' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'default_title_tag' AND `goldencobra_settings`.`ancestry` = '1/2' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '1' AND `goldencobra_settings`.`title` = 'article' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '1/4' AND `goldencobra_settings`.`title` = 'article_index' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'link_to_article' AND `goldencobra_settings`.`ancestry` = '1/4/5' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'url' AND `goldencobra_settings`.`ancestry` = '1' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '1' AND `goldencobra_settings`.`title` = 'facebook' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.4ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'appid' AND `goldencobra_settings`.`ancestry` = '1/8' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'opengraph_default_image' AND `goldencobra_settings`.`ancestry` = '1/8' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'goldencobra-newsletter-test.goldencobra_newsletter_newsletter_registrations' doesn't exist: SHOW FULL FIELDS FROM `goldencobra_newsletter_newsletter_registrations`
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mGoldencobra::Setting Load (0.5ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` IS NULL AND `goldencobra_settings`.`title` = 'goldencobra' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.6ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '1' AND `goldencobra_settings`.`title` = 'page' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'default_title_tag' AND `goldencobra_settings`.`ancestry` = '1/2' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '1' AND `goldencobra_settings`.`title` = 'article' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '1/4' AND `goldencobra_settings`.`title` = 'article_index' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'link_to_article' AND `goldencobra_settings`.`ancestry` = '1/4/5' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'url' AND `goldencobra_settings`.`ancestry` = '1' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '1' AND `goldencobra_settings`.`title` = 'facebook' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'appid' AND `goldencobra_settings`.`ancestry` = '1/8' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'opengraph_default_image' AND `goldencobra_settings`.`ancestry` = '1/8' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'admin@test.de' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `users` (`authentication_token`, `confirmation_sent_at`, `confirmation_token`, `confirmed_at`, `created_at`, `current_sign_in_at`, `current_sign_in_ip`, `email`, `encrypted_password`, `facebook`, `failed_attempts`, `fax`, `firstname`, `function`, `gender`, `googleplus`, `last_sign_in_at`, `last_sign_in_ip`, `lastname`, `linkedin`, `locked_at`, `password_salt`, `phone`, `remember_created_at`, `reset_password_sent_at`, `reset_password_token`, `sign_in_count`, `title`, `twitter`, `unconfirmed_email`, `unlock_token`, `updated_at`, `xing`) VALUES (NULL, NULL, NULL, '2012-01-09 13:28:58', '2012-04-11 23:16:08', NULL, NULL, 'admin@test.de', '$2a$04$3hmYf8.2JDfTpkwCdQvIg.Si4B/p0AUvS0HSmXcdc8di83fA.qB0K', NULL, 0, NULL, 'Admin', NULL, NULL, NULL, NULL, NULL, 'Goldencobra', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-04-11 23:16:08', NULL)
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `goldencobra_roles` (`created_at`, `description`, `name`, `updated_at`) VALUES ('2012-04-11 23:16:08', NULL, 'admin', '2012-04-11 23:16:08')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `goldencobra_permissions` (`action`, `created_at`, `role_id`, `subject_class`, `subject_id`, `updated_at`) VALUES ('manage', '2012-04-11 23:16:09', NULL, ':all', '', '2012-04-11 23:16:09')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mUPDATE `goldencobra_permissions` SET `role_id` = 1, `updated_at` = '2012-04-11 23:16:09' WHERE `goldencobra_permissions`.`id` = 1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO `goldencobra_roles_users` (`user_id`, `role_id`) VALUES (1, 1)
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Started GET "/admin/logout" for 127.0.0.1 at 2012-04-12 01:16:09 +0200
+Processing by ActiveAdmin::Devise::SessionsController#destroy as HTML
+Redirected to http://www.example.com/admin
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-04-12 01:16:09 +0200
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 3ms
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-04-12 01:16:09 +0200
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/devise/shared/_links.erb (3.1ms)
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (1161.7ms)
+Completed 200 OK in 1334ms (Views: 1332.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-04-12 01:16:10 +0200
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/devise/shared/_links.erb (1.0ms)
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (98.5ms)
+Completed 200 OK in 107ms (Views: 106.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2012-04-12 01:16:11 +0200
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"admin@test.de", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@test.de' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2012-04-11 23:16:11', `current_sign_in_at` = '2012-04-11 23:16:11', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2012-04-11 23:16:11' WHERE `users`.`id` = 1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/admin
+Completed 302 Found in 226ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-04-12 01:16:11 +0200
+Processing by Admin::DashboardController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mGoldencobra::Role Load (0.4ms)[0m  [1mSELECT `goldencobra_roles`.* FROM `goldencobra_roles` INNER JOIN `goldencobra_roles_users` ON `goldencobra_roles`.`id` = `goldencobra_roles_users`.`role_id` WHERE `goldencobra_roles_users`.`user_id` = 1[0m
+  [1m[35mGoldencobra::Permission Load (0.4ms)[0m  SELECT `goldencobra_permissions`.* FROM `goldencobra_permissions` WHERE `goldencobra_permissions`.`role_id` = 1
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/dashboard/index.html.arb (32.8ms)
+Completed 200 OK in 103ms (Views: 39.5ms | ActiveRecord: 1.3ms)
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mFriendlyId::Slug Load (0.5ms)[0m  SELECT `friendly_id_slugs`.* FROM `friendly_id_slugs` WHERE `friendly_id_slugs`.`sluggable_type` = 'Goldencobra::Article' AND (slug = 'dies-ist-ein-test' OR slug LIKE 'dies-ist-ein-test--%') ORDER BY LENGTH(slug) DESC, slug DESC LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `goldencobra_articles` (`active`, `ancestry`, `article_for_index_count`, `article_for_index_id`, `article_for_index_images`, `article_for_index_levels`, `breadcrumb`, `canonical_url`, `content`, `context_info`, `created_at`, `enable_social_sharing`, `id`, `robots_no_index`, `slug`, `startpage`, `subtitle`, `summary`, `teaser`, `template_file`, `title`, `updated_at`, `url_name`) VALUES (1, NULL, 0, NULL, 0, 0, NULL, NULL, '\"Die kleine Maus wandert.\"', NULL, '2012-04-11 23:16:12', NULL, 1, 0, 'dies-ist-ein-test', 0, NULL, NULL, '\"Die kleine …\"', NULL, '\"Dies ist ein Test\"', '2012-04-11 23:16:12', 'dies-ist-ein-test')[0m
+  [1m[35mFriendlyId::Slug Load (0.4ms)[0m  SELECT `friendly_id_slugs`.* FROM `friendly_id_slugs` WHERE `friendly_id_slugs`.`sluggable_id` = 1 AND `friendly_id_slugs`.`sluggable_type` = 'Goldencobra::Article' ORDER BY `friendly_id_slugs`.id DESC LIMIT 1
+  [1m[36mFriendlyId::Slug Load (0.3ms)[0m  [1mSELECT id FROM `friendly_id_slugs` WHERE `friendly_id_slugs`.`sluggable_id` = 1 AND `friendly_id_slugs`.`sluggable_type` = 'Goldencobra::Article' AND `friendly_id_slugs`.`slug` = 'dies-ist-ein-test' ORDER BY `friendly_id_slugs`.id DESC FOR UPDATE[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `friendly_id_slugs` (`created_at`, `slug`, `sluggable_id`, `sluggable_type`) VALUES ('2012-04-11 23:16:12', 'dies-ist-ein-test', 1, 'Goldencobra::Article')
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_metatags` WHERE (article_id = 1 AND name = 'OpenGraph Image')[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'opengraph_default_image'
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'opengraph_default_image' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `goldencobra_metatags` (`article_id`, `created_at`, `name`, `updated_at`, `value`) VALUES (1, '2012-04-11 23:16:12', 'OpenGraph Image', '2012-04-11 23:16:12', '/assets/open-graph.png')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Started GET "/admin/articles" for 127.0.0.1 at 2012-04-12 01:16:12 +0200
+Processing by Admin::ArticlesController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mGoldencobra::Role Load (0.3ms)[0m  [1mSELECT `goldencobra_roles`.* FROM `goldencobra_roles` INNER JOIN `goldencobra_roles_users` ON `goldencobra_roles`.`id` = `goldencobra_roles_users`.`role_id` WHERE `goldencobra_roles_users`.`user_id` = 1[0m
+  [1m[35mGoldencobra::Permission Load (0.2ms)[0m  SELECT `goldencobra_permissions`.* FROM `goldencobra_permissions` WHERE `goldencobra_permissions`.`role_id` = 1
+  [1m[36mGoldencobra::Article Exists (0.3ms)[0m  [1mSELECT 1 FROM `goldencobra_articles` LIMIT 1 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` 
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `goldencobra_articles` LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mGoldencobra::Article Load (0.3ms)[0m  SELECT `goldencobra_articles`.* FROM `goldencobra_articles` ORDER BY `goldencobra_articles`.`id` desc LIMIT 30 OFFSET 0
+  [1m[36mGoldencobra::Article Load (0.4ms)[0m  [1mSELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`id` IN (1) ORDER BY (case when goldencobra_articles.ancestry is null then 0 else 1 end), goldencobra_articles.ancestry[0m
+  [1m[35mGoldencobra::Article Load (0.4ms)[0m  SELECT `goldencobra_articles`.* FROM `goldencobra_articles` ORDER BY title
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `goldencobra_articles`.* FROM `goldencobra_articles` ORDER BY title[0m
+  [1m[35mGoldencobra::Article Load (0.4ms)[0m  SELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`ancestry` IS NULL
+  [1m[36mGoldencobra::Article Load (0.4ms)[0m  [1mSELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`ancestry` = '1'[0m
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/Goldencobra-3a3e80860606/app/views/goldencobra/admin/shared/_item.html.erb (3.7ms)
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/Goldencobra-3a3e80860606/app/views/goldencobra/admin/shared/_overview.html.erb (7.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`ancestry` IS NULL
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`ancestry` = '1'[0m
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/Goldencobra-3a3e80860606/app/views/goldencobra/admin/shared/_item.html.erb (1.9ms)
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/Goldencobra-3a3e80860606/app/views/goldencobra/admin/shared/_overview.html.erb (2.7ms)
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/resource/index.html.arb (972.2ms)
+Completed 200 OK in 995ms (Views: 974.1ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/admin/articles/dies-ist-ein-test/edit" for 127.0.0.1 at 2012-04-12 01:16:13 +0200
+Processing by Admin::ArticlesController#edit as HTML
+  Parameters: {"id"=>"dies-ist-ein-test"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mGoldencobra::Role Load (0.3ms)[0m  [1mSELECT `goldencobra_roles`.* FROM `goldencobra_roles` INNER JOIN `goldencobra_roles_users` ON `goldencobra_roles`.`id` = `goldencobra_roles_users`.`role_id` WHERE `goldencobra_roles_users`.`user_id` = 1[0m
+  [1m[35mGoldencobra::Permission Load (0.2ms)[0m  SELECT `goldencobra_permissions`.* FROM `goldencobra_permissions` WHERE `goldencobra_permissions`.`role_id` = 1
+  [1m[36mGoldencobra::Article Load (0.5ms)[0m  [1mSELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`slug` = 'dies-ist-ein-test' LIMIT 1[0m
+  [1m[35mGoldencobra::Article Load (0.5ms)[0m  SELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`id` IN (1) ORDER BY (case when goldencobra_articles.ancestry is null then 0 else 1 end), goldencobra_articles.ancestry
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`id` IN (1) ORDER BY (case when goldencobra_articles.ancestry is null then 0 else 1 end), goldencobra_articles.ancestry[0m
+  [1m[35mGoldencobra::Metatag Load (0.4ms)[0m  SELECT `goldencobra_metatags`.* FROM `goldencobra_metatags` WHERE `goldencobra_metatags`.`article_id` = 1
+  [1m[36mGoldencobra::Article Load (0.4ms)[0m  [1mSELECT `goldencobra_articles`.* FROM `goldencobra_articles` [0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.3ms)[0m  SELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 1 AND `taggings`.`taggable_type` = 'Goldencobra::Article' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)
+  [1m[36mGoldencobra::ArticleImage Load (0.2ms)[0m  [1mSELECT `goldencobra_article_images`.* FROM `goldencobra_article_images` WHERE `goldencobra_article_images`.`article_id` = 1[0m
+  [1m[35mGoldencobra::Upload Load (0.3ms)[0m  SELECT `goldencobra_uploads`.* FROM `goldencobra_uploads` 
+  [1m[36mGoldencobra::Widget Load (0.8ms)[0m  [1mSELECT `goldencobra_widgets`.* FROM `goldencobra_widgets` WHERE (active = true) ORDER BY title ASC[0m
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/Goldencobra-3a3e80860606/app/views/goldencobra/admin/articles/_widgets_sidebar.html.erb (6.0ms)
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/Goldencobra-3a3e80860606/app/views/goldencobra/admin/articles/_layout_sidebar.html.erb (7.4ms)
+  [1m[35mGoldencobra::Article Load (0.4ms)[0m  SELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/Goldencobra-3a3e80860606/app/views/goldencobra/admin/articles/_index_of_articles_sidebar.html.erb (179.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `goldencobra_uploads`.* FROM `goldencobra_uploads` [0m
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/Goldencobra-3a3e80860606/app/views/goldencobra/admin/articles/_image_module_sidebar.html.erb (1.5ms)
+  Rendered /Users/metz/git/goldencobra_newsletter/app/views/goldencobra_newsletter/admin/newsletters/_newsletter_module_sidebar.html.erb (5.0ms)
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/resource/edit.html.arb (789.1ms)
+Completed 500 Internal Server Error in 813ms
+  [1m[35m (1.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'admin@test.de' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `users` (`authentication_token`, `confirmation_sent_at`, `confirmation_token`, `confirmed_at`, `created_at`, `current_sign_in_at`, `current_sign_in_ip`, `email`, `encrypted_password`, `facebook`, `failed_attempts`, `fax`, `firstname`, `function`, `gender`, `googleplus`, `last_sign_in_at`, `last_sign_in_ip`, `lastname`, `linkedin`, `locked_at`, `password_salt`, `phone`, `remember_created_at`, `reset_password_sent_at`, `reset_password_token`, `sign_in_count`, `title`, `twitter`, `unconfirmed_email`, `unlock_token`, `updated_at`, `xing`) VALUES (NULL, NULL, NULL, '2012-01-09 13:28:58', '2012-04-11 23:16:14', NULL, NULL, 'admin@test.de', '$2a$04$hVuoCZB9.I5NZAzg1drf3.pftN4668w8RIDweMW8/.WCSOX7S6i4.', NULL, 0, NULL, 'Admin', NULL, NULL, NULL, NULL, NULL, 'Goldencobra', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-04-11 23:16:14', NULL)[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `goldencobra_roles` (`created_at`, `description`, `name`, `updated_at`) VALUES ('2012-04-11 23:16:14', NULL, 'admin', '2012-04-11 23:16:14')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `goldencobra_permissions` (`action`, `created_at`, `role_id`, `subject_class`, `subject_id`, `updated_at`) VALUES ('manage', '2012-04-11 23:16:14', NULL, ':all', '', '2012-04-11 23:16:14')[0m
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  UPDATE `goldencobra_permissions` SET `role_id` = 2, `updated_at` = '2012-04-11 23:16:14' WHERE `goldencobra_permissions`.`id` = 2
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO `goldencobra_roles_users` (`user_id`, `role_id`) VALUES (2, 2)[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+
+
+Started GET "/admin/logout" for 127.0.0.1 at 2012-04-12 01:16:16 +0200
+Processing by ActiveAdmin::Devise::SessionsController#destroy as HTML
+Redirected to http://127.0.0.1:54213/admin
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-04-12 01:16:16 +0200
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-04-12 01:16:16 +0200
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/devise/shared/_links.erb (1.2ms)
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (119.3ms)
+Completed 200 OK in 130ms (Views: 128.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/active_admin.css" for 127.0.0.1 at 2012-04-12 01:16:16 +0200
+Compiled active_admin.css  (2796ms)  (pid 51782)
+Served asset /active_admin.css - 200 OK (2914ms)
+
+
+Started GET "/assets/goldencobra/active_admin.css" for 127.0.0.1 at 2012-04-12 01:16:19 +0200
+Compiled goldencobra/active_admin.css  (2236ms)  (pid 51782)
+Served asset /goldencobra/active_admin.css - 200 OK (2330ms)
+
+
+Started GET "/assets/goldencobra/chosen.css" for 127.0.0.1 at 2012-04-12 01:16:21 +0200
+Served asset /goldencobra/chosen.css - 404 Not Found (9ms)
+Processing by Goldencobra::ArticlesController#show as CSS
+  Parameters: {"article_id"=>"assets/goldencobra/chosen"}
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen'
+  [1m[36mGoldencobra::Article Load (0.3ms)[0m  [1mSELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1[0m
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 56ms (Views: 36.4ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-04-12 01:16:21 +0200
+Served asset /active_admin.js - 404 Not Found (7ms)
+Processing by Goldencobra::ArticlesController#show as JS
+  Parameters: {"article_id"=>"assets/active_admin"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'active_admin'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'active_admin'[0m
+  [1m[35mGoldencobra::Article Load (0.3ms)[0m  SELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 13ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/goldencobra/active_admin.js" for 127.0.0.1 at 2012-04-12 01:16:21 +0200
+Compiled jquery.js  (2ms)  (pid 51782)
+Compiled jquery-ui.js  (4ms)  (pid 51782)
+Compiled jquery_ujs.js  (1ms)  (pid 51782)
+Compiled active_admin/application.js  (0ms)  (pid 51782)
+Compiled active_admin/base.js  (244ms)  (pid 51782)
+Compiled goldencobra/active_admin.js  (256ms)  (pid 51782)
+Served asset /goldencobra/active_admin.js - 200 OK (380ms)
+
+
+Started GET "/assets/goldencobra/jquery.tinymce.js" for 127.0.0.1 at 2012-04-12 01:16:22 +0200
+Compiled goldencobra/jquery.tinymce.js  (0ms)  (pid 51782)
+Served asset /goldencobra/jquery.tinymce.js - 200 OK (17ms)
+
+
+Started GET "/assets/goldencobra/chosen.jquery.min.js" for 127.0.0.1 at 2012-04-12 01:16:22 +0200
+Served asset /goldencobra/chosen.jquery.min.js - 404 Not Found (18ms)
+Processing by Goldencobra::ArticlesController#show as JS
+  Parameters: {"article_id"=>"assets/goldencobra/chosen.jquery.min"}
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen.jquery.min'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen.jquery.min'
+  [1m[36mGoldencobra::Article Load (0.3ms)[0m  [1mSELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1[0m
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 52ms (Views: 0.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/active_admin/print.css" for 127.0.0.1 at 2012-04-12 01:16:22 +0200
+Compiled active_admin/print.css  (230ms)  (pid 51782)
+Served asset /active_admin/print.css - 200 OK (246ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-04-12 01:16:22 +0200
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/devise/shared/_links.erb (87.4ms)
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (116.6ms)
+Completed 200 OK in 126ms (Views: 124.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/goldencobra/chosen.css" for 127.0.0.1 at 2012-04-12 01:16:22 +0200
+Served asset /goldencobra/chosen.css - 404 Not Found (7ms)
+Processing by Goldencobra::ArticlesController#show as CSS
+  Parameters: {"article_id"=>"assets/goldencobra/chosen"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen'[0m
+  [1m[35mGoldencobra::Article Load (0.3ms)[0m  SELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 15ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/goldencobra/chosen.jquery.min.js" for 127.0.0.1 at 2012-04-12 01:16:22 +0200
+Served asset /goldencobra/chosen.jquery.min.js - 404 Not Found (8ms)
+Processing by Goldencobra::ArticlesController#show as JS
+  Parameters: {"article_id"=>"assets/goldencobra/chosen.jquery.min"}
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen.jquery.min'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen.jquery.min'
+  [1m[36mGoldencobra::Article Load (0.2ms)[0m  [1mSELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1[0m
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 13ms (Views: 0.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-04-12 01:16:22 +0200
+Served asset /active_admin.js - 404 Not Found (6ms)
+Processing by Goldencobra::ArticlesController#show as JS
+  Parameters: {"article_id"=>"assets/active_admin"}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'active_admin'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'active_admin'[0m
+  [1m[35mGoldencobra::Article Load (0.2ms)[0m  SELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 12ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2012-04-12 01:16:22 +0200
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"admin@test.de", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@test.de' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2012-04-11 23:16:23', `current_sign_in_at` = '2012-04-11 23:16:23', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2012-04-11 23:16:23' WHERE `users`.`id` = 2[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://127.0.0.1:54213/admin
+Completed 302 Found in 17ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-04-12 01:16:23 +0200
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mGoldencobra::Role Load (0.3ms)[0m  SELECT `goldencobra_roles`.* FROM `goldencobra_roles` INNER JOIN `goldencobra_roles_users` ON `goldencobra_roles`.`id` = `goldencobra_roles_users`.`role_id` WHERE `goldencobra_roles_users`.`user_id` = 2
+  [1m[36mGoldencobra::Permission Load (0.3ms)[0m  [1mSELECT `goldencobra_permissions`.* FROM `goldencobra_permissions` WHERE `goldencobra_permissions`.`role_id` = 2[0m
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/dashboard/index.html.arb (13.0ms)
+Completed 200 OK in 26ms (Views: 14.0ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-04-12 01:16:23 +0200
+Served asset /active_admin.js - 404 Not Found (7ms)
+Processing by Goldencobra::ArticlesController#show as JS
+  Parameters: {"article_id"=>"assets/active_admin"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mGoldencobra::Role Load (0.3ms)[0m  [1mSELECT `goldencobra_roles`.* FROM `goldencobra_roles` INNER JOIN `goldencobra_roles_users` ON `goldencobra_roles`.`id` = `goldencobra_roles_users`.`role_id` WHERE `goldencobra_roles_users`.`user_id` = 2[0m
+  [1m[35mGoldencobra::Permission Load (0.2ms)[0m  SELECT `goldencobra_permissions`.* FROM `goldencobra_permissions` WHERE `goldencobra_permissions`.`role_id` = 2
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'active_admin'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'active_admin'
+  [1m[36mGoldencobra::Article Load (0.2ms)[0m  [1mSELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1[0m
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 18ms (Views: 0.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/goldencobra/chosen.jquery.min.js" for 127.0.0.1 at 2012-04-12 01:16:23 +0200
+Served asset /goldencobra/chosen.jquery.min.js - 404 Not Found (7ms)
+Processing by Goldencobra::ArticlesController#show as JS
+  Parameters: {"article_id"=>"assets/goldencobra/chosen.jquery.min"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mGoldencobra::Role Load (0.4ms)[0m  [1mSELECT `goldencobra_roles`.* FROM `goldencobra_roles` INNER JOIN `goldencobra_roles_users` ON `goldencobra_roles`.`id` = `goldencobra_roles_users`.`role_id` WHERE `goldencobra_roles_users`.`user_id` = 2[0m
+  [1m[35mGoldencobra::Permission Load (0.3ms)[0m  SELECT `goldencobra_permissions`.* FROM `goldencobra_permissions` WHERE `goldencobra_permissions`.`role_id` = 2
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen.jquery.min'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen.jquery.min'
+  [1m[36mGoldencobra::Article Load (0.3ms)[0m  [1mSELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1[0m
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 16ms (Views: 0.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/goldencobra/chosen.css" for 127.0.0.1 at 2012-04-12 01:16:23 +0200
+Served asset /goldencobra/chosen.css - 404 Not Found (7ms)
+Processing by Goldencobra::ArticlesController#show as CSS
+  Parameters: {"article_id"=>"assets/goldencobra/chosen"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mGoldencobra::Role Load (0.3ms)[0m  [1mSELECT `goldencobra_roles`.* FROM `goldencobra_roles` INNER JOIN `goldencobra_roles_users` ON `goldencobra_roles`.`id` = `goldencobra_roles_users`.`role_id` WHERE `goldencobra_roles_users`.`user_id` = 2[0m
+  [1m[35mGoldencobra::Permission Load (0.2ms)[0m  SELECT `goldencobra_permissions`.* FROM `goldencobra_permissions` WHERE `goldencobra_permissions`.`role_id` = 2
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen'
+  [1m[36mGoldencobra::Article Load (0.3ms)[0m  [1mSELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1[0m
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 15ms (Views: 0.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/active_admin/nested_menu_arrow.gif" for 127.0.0.1 at 2012-04-12 01:16:23 +0200
+Served asset /active_admin/nested_menu_arrow.gif - 200 OK (7ms)
+
+
+Started GET "/assets/goldencobra/cobra.png" for 127.0.0.1 at 2012-04-12 01:16:23 +0200
+Served asset /goldencobra/cobra.png - 200 OK (8ms)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFriendlyId::Slug Load (0.6ms)[0m  [1mSELECT `friendly_id_slugs`.* FROM `friendly_id_slugs` WHERE `friendly_id_slugs`.`sluggable_type` = 'Goldencobra::Article' AND (slug = 'dies-ist-ein-test' OR slug LIKE 'dies-ist-ein-test--%') ORDER BY LENGTH(slug) DESC, slug DESC LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `goldencobra_articles` (`active`, `ancestry`, `article_for_index_count`, `article_for_index_id`, `article_for_index_images`, `article_for_index_levels`, `breadcrumb`, `canonical_url`, `content`, `context_info`, `created_at`, `enable_social_sharing`, `id`, `robots_no_index`, `slug`, `startpage`, `subtitle`, `summary`, `teaser`, `template_file`, `title`, `updated_at`, `url_name`) VALUES (1, NULL, 0, NULL, 0, 0, NULL, NULL, '\"Die kleine Maus wandert.\"', NULL, '2012-04-11 23:16:23', NULL, 1, 0, 'dies-ist-ein-test', 0, NULL, NULL, '\"Die kleine …\"', NULL, '\"Dies ist ein Test\"', '2012-04-11 23:16:23', 'dies-ist-ein-test')
+  [1m[36mFriendlyId::Slug Load (0.4ms)[0m  [1mSELECT `friendly_id_slugs`.* FROM `friendly_id_slugs` WHERE `friendly_id_slugs`.`sluggable_id` = 1 AND `friendly_id_slugs`.`sluggable_type` = 'Goldencobra::Article' ORDER BY `friendly_id_slugs`.id DESC LIMIT 1[0m
+  [1m[35mFriendlyId::Slug Load (0.3ms)[0m  SELECT id FROM `friendly_id_slugs` WHERE `friendly_id_slugs`.`sluggable_id` = 1 AND `friendly_id_slugs`.`sluggable_type` = 'Goldencobra::Article' AND `friendly_id_slugs`.`slug` = 'dies-ist-ein-test' ORDER BY `friendly_id_slugs`.id DESC FOR UPDATE
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `friendly_id_slugs` (`created_at`, `slug`, `sluggable_id`, `sluggable_type`) VALUES ('2012-04-11 23:16:23', 'dies-ist-ein-test', 1, 'Goldencobra::Article')[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `goldencobra_metatags` WHERE (article_id = 1 AND name = 'OpenGraph Image')
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'opengraph_default_image'[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'opengraph_default_image' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `goldencobra_metatags` (`article_id`, `created_at`, `name`, `updated_at`, `value`) VALUES (1, '2012-04-11 23:16:23', 'OpenGraph Image', '2012-04-11 23:16:23', '/assets/open-graph.png')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mSELECT DATABASE() as db[0m
+  [1m[35m (1.4ms)[0m  select table_name from information_schema.views where table_schema = 'goldencobra-newsletter-test'
+  [1m[36m (3.0ms)[0m  [1mTRUNCATE TABLE `active_admin_comments`;[0m
+  [1m[35m (1.5ms)[0m  TRUNCATE TABLE `friendly_id_slugs`;
+  [1m[36m (5.0ms)[0m  [1mTRUNCATE TABLE `goldencobra_article_images`;[0m
+  [1m[35m (2.1ms)[0m  TRUNCATE TABLE `goldencobra_article_widgets`;
+  [1m[36m (2.0ms)[0m  [1mTRUNCATE TABLE `goldencobra_articles`;[0m
+  [1m[35m (1.1ms)[0m  TRUNCATE TABLE `goldencobra_helps`;
+  [1m[36m (1.0ms)[0m  [1mTRUNCATE TABLE `goldencobra_locations`;[0m
+  [1m[35m (1.0ms)[0m  TRUNCATE TABLE `goldencobra_menues`;
+  [1m[36m (1.0ms)[0m  [1mTRUNCATE TABLE `goldencobra_metatags`;[0m
+  [1m[35m (1.0ms)[0m  TRUNCATE TABLE `goldencobra_permissions`;
+  [1m[36m (1.1ms)[0m  [1mTRUNCATE TABLE `goldencobra_roles`;[0m
+  [1m[35m (1.0ms)[0m  TRUNCATE TABLE `goldencobra_roles_users`;
+  [1m[36m (1.1ms)[0m  [1mTRUNCATE TABLE `goldencobra_settings`;[0m
+  [1m[35m (1.1ms)[0m  TRUNCATE TABLE `goldencobra_uploads`;
+  [1m[36m (0.9ms)[0m  [1mTRUNCATE TABLE `goldencobra_widgets`;[0m
+  [1m[35m (1.0ms)[0m  TRUNCATE TABLE `taggings`;
+  [1m[36m (0.8ms)[0m  [1mTRUNCATE TABLE `tags`;[0m
+  [1m[35m (1.7ms)[0m  TRUNCATE TABLE `users`;
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'admin@test.de' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `users` (`authentication_token`, `confirmation_sent_at`, `confirmation_token`, `confirmed_at`, `created_at`, `current_sign_in_at`, `current_sign_in_ip`, `email`, `encrypted_password`, `facebook`, `failed_attempts`, `fax`, `firstname`, `function`, `gender`, `googleplus`, `last_sign_in_at`, `last_sign_in_ip`, `lastname`, `linkedin`, `locked_at`, `password_salt`, `phone`, `remember_created_at`, `reset_password_sent_at`, `reset_password_token`, `sign_in_count`, `title`, `twitter`, `unconfirmed_email`, `unlock_token`, `updated_at`, `xing`) VALUES (NULL, NULL, NULL, '2012-01-09 13:28:58', '2012-04-11 23:16:23', NULL, NULL, 'admin@test.de', '$2a$04$eBjqlXF7rURn9K0iomnIpupF0/PIUPru8rdp8eJ150fPzauTNdz82', NULL, 0, NULL, 'Admin', NULL, NULL, NULL, NULL, NULL, 'Goldencobra', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-04-11 23:16:23', NULL)
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `goldencobra_roles` (`created_at`, `description`, `name`, `updated_at`) VALUES ('2012-04-11 23:16:23', NULL, 'admin', '2012-04-11 23:16:23')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `goldencobra_permissions` (`action`, `created_at`, `role_id`, `subject_class`, `subject_id`, `updated_at`) VALUES ('manage', '2012-04-11 23:16:23', NULL, ':all', '', '2012-04-11 23:16:23')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mUPDATE `goldencobra_permissions` SET `role_id` = 1, `updated_at` = '2012-04-11 23:16:23' WHERE `goldencobra_permissions`.`id` = 1[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO `goldencobra_roles_users` (`user_id`, `role_id`) VALUES (1, 1)
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/admin/logout" for 127.0.0.1 at 2012-04-12 01:16:23 +0200
+Processing by ActiveAdmin::Devise::SessionsController#destroy as HTML
+Redirected to http://127.0.0.1:54213/admin
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-04-12 01:16:23 +0200
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-04-12 01:16:23 +0200
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/devise/shared/_links.erb (1.4ms)
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (38.1ms)
+Completed 200 OK in 50ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/goldencobra/chosen.css" for 127.0.0.1 at 2012-04-12 01:16:23 +0200
+Served asset /goldencobra/chosen.css - 404 Not Found (9ms)
+Processing by Goldencobra::ArticlesController#show as CSS
+  Parameters: {"article_id"=>"assets/goldencobra/chosen"}
+  [1m[35m (3.9ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen'[0m
+  [1m[35mGoldencobra::Article Load (0.4ms)[0m  SELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 21ms (Views: 0.6ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/assets/goldencobra/chosen.jquery.min.js" for 127.0.0.1 at 2012-04-12 01:16:24 +0200
+Served asset /goldencobra/chosen.jquery.min.js - 404 Not Found (8ms)
+Processing by Goldencobra::ArticlesController#show as JS
+  Parameters: {"article_id"=>"assets/goldencobra/chosen.jquery.min"}
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen.jquery.min'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen.jquery.min'
+  [1m[36mGoldencobra::Article Load (0.3ms)[0m  [1mSELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1[0m
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 17ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-04-12 01:16:24 +0200
+Served asset /active_admin.js - 404 Not Found (7ms)
+Processing by Goldencobra::ArticlesController#show as JS
+  Parameters: {"article_id"=>"assets/active_admin"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'active_admin'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'active_admin'[0m
+  [1m[35mGoldencobra::Article Load (1.1ms)[0m  SELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 17ms (Views: 0.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-04-12 01:16:24 +0200
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/devise/shared/_links.erb (0.9ms)
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (28.1ms)
+Completed 200 OK in 38ms (Views: 36.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/goldencobra/chosen.css" for 127.0.0.1 at 2012-04-12 01:16:24 +0200
+Served asset /goldencobra/chosen.css - 404 Not Found (10ms)
+Processing by Goldencobra::ArticlesController#show as CSS
+  Parameters: {"article_id"=>"assets/goldencobra/chosen"}
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen'
+  [1m[36mGoldencobra::Article Load (0.4ms)[0m  [1mSELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1[0m
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 17ms (Views: 0.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/goldencobra/chosen.jquery.min.js" for 127.0.0.1 at 2012-04-12 01:16:24 +0200
+Served asset /goldencobra/chosen.jquery.min.js - 404 Not Found (7ms)
+Processing by Goldencobra::ArticlesController#show as JS
+  Parameters: {"article_id"=>"assets/goldencobra/chosen.jquery.min"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen.jquery.min'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen.jquery.min'[0m
+  [1m[35mGoldencobra::Article Load (0.3ms)[0m  SELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 12ms (Views: 0.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-04-12 01:16:24 +0200
+Served asset /active_admin.js - 404 Not Found (6ms)
+Processing by Goldencobra::ArticlesController#show as JS
+  Parameters: {"article_id"=>"assets/active_admin"}
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'active_admin'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'active_admin'
+  [1m[36mGoldencobra::Article Load (0.3ms)[0m  [1mSELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1[0m
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 12ms (Views: 0.4ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2012-04-12 01:16:24 +0200
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"admin@test.de", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@test.de' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2012-04-11 23:16:24', `current_sign_in_at` = '2012-04-11 23:16:24', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2012-04-11 23:16:24' WHERE `users`.`id` = 1
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:54213/admin
+Completed 302 Found in 11ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-04-12 01:16:24 +0200
+Processing by Admin::DashboardController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mGoldencobra::Role Load (0.3ms)[0m  [1mSELECT `goldencobra_roles`.* FROM `goldencobra_roles` INNER JOIN `goldencobra_roles_users` ON `goldencobra_roles`.`id` = `goldencobra_roles_users`.`role_id` WHERE `goldencobra_roles_users`.`user_id` = 1[0m
+  [1m[35mGoldencobra::Permission Load (0.2ms)[0m  SELECT `goldencobra_permissions`.* FROM `goldencobra_permissions` WHERE `goldencobra_permissions`.`role_id` = 1
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/dashboard/index.html.arb (12.5ms)
+Completed 200 OK in 18ms (Views: 13.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-04-12 01:16:24 +0200
+Served asset /active_admin.js - 404 Not Found (8ms)
+Processing by Goldencobra::ArticlesController#show as JS
+  Parameters: {"article_id"=>"assets/active_admin"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mGoldencobra::Role Load (0.4ms)[0m  SELECT `goldencobra_roles`.* FROM `goldencobra_roles` INNER JOIN `goldencobra_roles_users` ON `goldencobra_roles`.`id` = `goldencobra_roles_users`.`role_id` WHERE `goldencobra_roles_users`.`user_id` = 1
+  [1m[36mGoldencobra::Permission Load (0.3ms)[0m  [1mSELECT `goldencobra_permissions`.* FROM `goldencobra_permissions` WHERE `goldencobra_permissions`.`role_id` = 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'active_admin'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'active_admin'[0m
+  [1m[35mGoldencobra::Article Load (0.3ms)[0m  SELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 17ms (Views: 0.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/goldencobra/chosen.jquery.min.js" for 127.0.0.1 at 2012-04-12 01:16:24 +0200
+Served asset /goldencobra/chosen.jquery.min.js - 404 Not Found (7ms)
+Processing by Goldencobra::ArticlesController#show as JS
+  Parameters: {"article_id"=>"assets/goldencobra/chosen.jquery.min"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mGoldencobra::Role Load (0.4ms)[0m  SELECT `goldencobra_roles`.* FROM `goldencobra_roles` INNER JOIN `goldencobra_roles_users` ON `goldencobra_roles`.`id` = `goldencobra_roles_users`.`role_id` WHERE `goldencobra_roles_users`.`user_id` = 1
+  [1m[36mGoldencobra::Permission Load (0.3ms)[0m  [1mSELECT `goldencobra_permissions`.* FROM `goldencobra_permissions` WHERE `goldencobra_permissions`.`role_id` = 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen.jquery.min'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen.jquery.min'[0m
+  [1m[35mGoldencobra::Article Load (0.2ms)[0m  SELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 17ms (Views: 0.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/goldencobra/chosen.css" for 127.0.0.1 at 2012-04-12 01:16:24 +0200
+Served asset /goldencobra/chosen.css - 404 Not Found (7ms)
+Processing by Goldencobra::ArticlesController#show as CSS
+  Parameters: {"article_id"=>"assets/goldencobra/chosen"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mGoldencobra::Role Load (0.4ms)[0m  SELECT `goldencobra_roles`.* FROM `goldencobra_roles` INNER JOIN `goldencobra_roles_users` ON `goldencobra_roles`.`id` = `goldencobra_roles_users`.`role_id` WHERE `goldencobra_roles_users`.`user_id` = 1
+  [1m[36mGoldencobra::Permission Load (0.2ms)[0m  [1mSELECT `goldencobra_permissions`.* FROM `goldencobra_permissions` WHERE `goldencobra_permissions`.`role_id` = 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen'[0m
+  [1m[35mGoldencobra::Article Load (0.3ms)[0m  SELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 17ms (Views: 0.4ms | ActiveRecord: 1.7ms)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFriendlyId::Slug Load (0.4ms)[0m  SELECT `friendly_id_slugs`.* FROM `friendly_id_slugs` WHERE `friendly_id_slugs`.`sluggable_type` = 'Goldencobra::Article' AND (slug = 'dies-ist-ein-test' OR slug LIKE 'dies-ist-ein-test--%') ORDER BY LENGTH(slug) DESC, slug DESC LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `goldencobra_articles` (`active`, `ancestry`, `article_for_index_count`, `article_for_index_id`, `article_for_index_images`, `article_for_index_levels`, `breadcrumb`, `canonical_url`, `content`, `context_info`, `created_at`, `enable_social_sharing`, `id`, `robots_no_index`, `slug`, `startpage`, `subtitle`, `summary`, `teaser`, `template_file`, `title`, `updated_at`, `url_name`) VALUES (1, NULL, 0, NULL, 0, 0, NULL, NULL, '\"Die kleine Maus wandert.\"', NULL, '2012-04-11 23:16:24', NULL, 1, 0, 'dies-ist-ein-test', 0, NULL, NULL, '\"Die kleine …\"', NULL, '\"Dies ist ein Test\"', '2012-04-11 23:16:24', 'dies-ist-ein-test')[0m
+  [1m[35mFriendlyId::Slug Load (0.3ms)[0m  SELECT `friendly_id_slugs`.* FROM `friendly_id_slugs` WHERE `friendly_id_slugs`.`sluggable_id` = 1 AND `friendly_id_slugs`.`sluggable_type` = 'Goldencobra::Article' ORDER BY `friendly_id_slugs`.id DESC LIMIT 1
+  [1m[36mFriendlyId::Slug Load (0.2ms)[0m  [1mSELECT id FROM `friendly_id_slugs` WHERE `friendly_id_slugs`.`sluggable_id` = 1 AND `friendly_id_slugs`.`sluggable_type` = 'Goldencobra::Article' AND `friendly_id_slugs`.`slug` = 'dies-ist-ein-test' ORDER BY `friendly_id_slugs`.id DESC FOR UPDATE[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `friendly_id_slugs` (`created_at`, `slug`, `sluggable_id`, `sluggable_type`) VALUES ('2012-04-11 23:16:24', 'dies-ist-ein-test', 1, 'Goldencobra::Article')
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_metatags` WHERE (article_id = 1 AND name = 'OpenGraph Image')[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'opengraph_default_image'
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'opengraph_default_image'[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `goldencobra_metatags` (`article_id`, `created_at`, `name`, `updated_at`, `value`) VALUES (1, '2012-04-11 23:16:25', 'OpenGraph Image', '2012-04-11 23:16:25', 'opengraph_default_image')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (1.8ms)[0m  TRUNCATE TABLE `active_admin_comments`;
+  [1m[36m (1.4ms)[0m  [1mTRUNCATE TABLE `friendly_id_slugs`;[0m
+  [1m[35m (1.1ms)[0m  TRUNCATE TABLE `goldencobra_article_images`;
+  [1m[36m (1.1ms)[0m  [1mTRUNCATE TABLE `goldencobra_article_widgets`;[0m
+  [1m[35m (1.5ms)[0m  TRUNCATE TABLE `goldencobra_articles`;
+  [1m[36m (1.7ms)[0m  [1mTRUNCATE TABLE `goldencobra_helps`;[0m
+  [1m[35m (1.1ms)[0m  TRUNCATE TABLE `goldencobra_locations`;
+  [1m[36m (1.1ms)[0m  [1mTRUNCATE TABLE `goldencobra_menues`;[0m
+  [1m[35m (1.0ms)[0m  TRUNCATE TABLE `goldencobra_metatags`;
+  [1m[36m (0.9ms)[0m  [1mTRUNCATE TABLE `goldencobra_permissions`;[0m
+  [1m[35m (1.0ms)[0m  TRUNCATE TABLE `goldencobra_roles`;
+  [1m[36m (1.4ms)[0m  [1mTRUNCATE TABLE `goldencobra_roles_users`;[0m
+  [1m[35m (1.1ms)[0m  TRUNCATE TABLE `goldencobra_settings`;
+  [1m[36m (1.5ms)[0m  [1mTRUNCATE TABLE `goldencobra_uploads`;[0m
+  [1m[35m (1.5ms)[0m  TRUNCATE TABLE `goldencobra_widgets`;
+  [1m[36m (1.1ms)[0m  [1mTRUNCATE TABLE `taggings`;[0m
+  [1m[35m (0.7ms)[0m  TRUNCATE TABLE `tags`;
+  [1m[36m (1.7ms)[0m  [1mTRUNCATE TABLE `users`;[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` IS NULL AND `goldencobra_settings`.`title` = 'goldencobra' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `goldencobra_settings` (`ancestry`, `created_at`, `title`, `updated_at`, `value`) VALUES (NULL, '2012-04-11 23:20:35', 'goldencobra', '2012-04-11 23:20:35', NULL)[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '1' AND `goldencobra_settings`.`title` = 'page' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `goldencobra_settings` (`ancestry`, `created_at`, `title`, `updated_at`, `value`) VALUES ('1', '2012-04-11 23:20:35', 'page', '2012-04-11 23:20:35', NULL)[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'default_title_tag' AND `goldencobra_settings`.`ancestry` = '1/2' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `goldencobra_settings` (`ancestry`, `created_at`, `title`, `updated_at`, `value`) VALUES ('1/2', '2012-04-11 23:20:35', 'default_title_tag', '2012-04-11 23:20:35', 'Goldencobra')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '1' AND `goldencobra_settings`.`title` = 'article' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `goldencobra_settings` (`ancestry`, `created_at`, `title`, `updated_at`, `value`) VALUES ('1', '2012-04-11 23:20:35', 'article', '2012-04-11 23:20:35', NULL)[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '1/4' AND `goldencobra_settings`.`title` = 'article_index' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `goldencobra_settings` (`ancestry`, `created_at`, `title`, `updated_at`, `value`) VALUES ('1/4', '2012-04-11 23:20:35', 'article_index', '2012-04-11 23:20:35', NULL)[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'link_to_article' AND `goldencobra_settings`.`ancestry` = '1/4/5' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `goldencobra_settings` (`ancestry`, `created_at`, `title`, `updated_at`, `value`) VALUES ('1/4/5', '2012-04-11 23:20:35', 'link_to_article', '2012-04-11 23:20:35', 'weiterlesen')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'url' AND `goldencobra_settings`.`ancestry` = '1' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `goldencobra_settings` (`ancestry`, `created_at`, `title`, `updated_at`, `value`) VALUES ('1', '2012-04-11 23:20:35', 'url', '2012-04-11 23:20:35', 'www.goldencobra.de')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '1' AND `goldencobra_settings`.`title` = 'facebook' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `goldencobra_settings` (`ancestry`, `created_at`, `title`, `updated_at`, `value`) VALUES ('1', '2012-04-11 23:20:35', 'facebook', '2012-04-11 23:20:35', NULL)[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'appid' AND `goldencobra_settings`.`ancestry` = '1/8' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `goldencobra_settings` (`ancestry`, `created_at`, `title`, `updated_at`, `value`) VALUES ('1/8', '2012-04-11 23:20:35', 'appid', '2012-04-11 23:20:35', '123456')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'opengraph_default_image' AND `goldencobra_settings`.`ancestry` = '1/8' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `goldencobra_settings` (`ancestry`, `created_at`, `title`, `updated_at`, `value`) VALUES ('1/8', '2012-04-11 23:20:35', 'opengraph_default_image', '2012-04-11 23:20:35', '/assets/open-graph.png')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'goldencobra-newsletter-test.goldencobra_newsletter_newsletter_registrations' doesn't exist: SHOW FULL FIELDS FROM `goldencobra_newsletter_newsletter_registrations`
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mGoldencobra::Setting Load (0.5ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` IS NULL AND `goldencobra_settings`.`title` = 'goldencobra' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.4ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '1' AND `goldencobra_settings`.`title` = 'page' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'default_title_tag' AND `goldencobra_settings`.`ancestry` = '1/2' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '1' AND `goldencobra_settings`.`title` = 'article' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '1/4' AND `goldencobra_settings`.`title` = 'article_index' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'link_to_article' AND `goldencobra_settings`.`ancestry` = '1/4/5' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'url' AND `goldencobra_settings`.`ancestry` = '1' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '1' AND `goldencobra_settings`.`title` = 'facebook' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'appid' AND `goldencobra_settings`.`ancestry` = '1/8' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'opengraph_default_image' AND `goldencobra_settings`.`ancestry` = '1/8' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'admin@test.de' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `users` (`authentication_token`, `confirmation_sent_at`, `confirmation_token`, `confirmed_at`, `created_at`, `current_sign_in_at`, `current_sign_in_ip`, `email`, `encrypted_password`, `facebook`, `failed_attempts`, `fax`, `firstname`, `function`, `gender`, `googleplus`, `last_sign_in_at`, `last_sign_in_ip`, `lastname`, `linkedin`, `locked_at`, `password_salt`, `phone`, `remember_created_at`, `reset_password_sent_at`, `reset_password_token`, `sign_in_count`, `title`, `twitter`, `unconfirmed_email`, `unlock_token`, `updated_at`, `xing`) VALUES (NULL, NULL, NULL, '2012-01-09 13:28:58', '2012-04-11 23:21:08', NULL, NULL, 'admin@test.de', '$2a$04$iSPnl9tCnC7KVAFhU0y/9epM7rni6DT1E9LpFwJL5d0Nkp.0nwlOe', NULL, 0, NULL, 'Admin', NULL, NULL, NULL, NULL, NULL, 'Goldencobra', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-04-11 23:21:08', NULL)
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `goldencobra_roles` (`created_at`, `description`, `name`, `updated_at`) VALUES ('2012-04-11 23:21:08', NULL, 'admin', '2012-04-11 23:21:08')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `goldencobra_permissions` (`action`, `created_at`, `role_id`, `subject_class`, `subject_id`, `updated_at`) VALUES ('manage', '2012-04-11 23:21:08', NULL, ':all', '', '2012-04-11 23:21:08')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mUPDATE `goldencobra_permissions` SET `role_id` = 1, `updated_at` = '2012-04-11 23:21:08' WHERE `goldencobra_permissions`.`id` = 1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `goldencobra_roles_users` (`user_id`, `role_id`) VALUES (1, 1)
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Started GET "/admin/logout" for 127.0.0.1 at 2012-04-12 01:21:08 +0200
+Processing by ActiveAdmin::Devise::SessionsController#destroy as HTML
+Redirected to http://www.example.com/admin
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-04-12 01:21:08 +0200
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 3ms
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-04-12 01:21:08 +0200
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/devise/shared/_links.erb (2.4ms)
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (1091.3ms)
+Completed 200 OK in 1321ms (Views: 1319.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-04-12 01:21:10 +0200
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/devise/shared/_links.erb (0.9ms)
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (29.4ms)
+Completed 200 OK in 38ms (Views: 37.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2012-04-12 01:21:10 +0200
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"admin@test.de", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@test.de' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2012-04-11 23:21:10', `current_sign_in_at` = '2012-04-11 23:21:10', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2012-04-11 23:21:10' WHERE `users`.`id` = 1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/admin
+Completed 302 Found in 172ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-04-12 01:21:11 +0200
+Processing by Admin::DashboardController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mGoldencobra::Role Load (3.9ms)[0m  [1mSELECT `goldencobra_roles`.* FROM `goldencobra_roles` INNER JOIN `goldencobra_roles_users` ON `goldencobra_roles`.`id` = `goldencobra_roles_users`.`role_id` WHERE `goldencobra_roles_users`.`user_id` = 1[0m
+  [1m[35mGoldencobra::Permission Load (0.3ms)[0m  SELECT `goldencobra_permissions`.* FROM `goldencobra_permissions` WHERE `goldencobra_permissions`.`role_id` = 1
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/dashboard/index.html.arb (103.9ms)
+Completed 200 OK in 193ms (Views: 110.0ms | ActiveRecord: 4.6ms)
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mFriendlyId::Slug Load (0.5ms)[0m  SELECT `friendly_id_slugs`.* FROM `friendly_id_slugs` WHERE `friendly_id_slugs`.`sluggable_type` = 'Goldencobra::Article' AND (slug = 'dies-ist-ein-test' OR slug LIKE 'dies-ist-ein-test--%') ORDER BY LENGTH(slug) DESC, slug DESC LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `goldencobra_articles` (`active`, `ancestry`, `article_for_index_count`, `article_for_index_id`, `article_for_index_images`, `article_for_index_levels`, `breadcrumb`, `canonical_url`, `content`, `context_info`, `created_at`, `enable_social_sharing`, `id`, `robots_no_index`, `slug`, `startpage`, `subtitle`, `summary`, `teaser`, `template_file`, `title`, `updated_at`, `url_name`) VALUES (1, NULL, 0, NULL, 0, 0, NULL, NULL, '\"Die kleine Maus wandert.\"', NULL, '2012-04-11 23:21:11', NULL, 1, 0, 'dies-ist-ein-test', 0, NULL, NULL, '\"Die kleine …\"', NULL, '\"Dies ist ein Test\"', '2012-04-11 23:21:11', 'dies-ist-ein-test')[0m
+  [1m[35mFriendlyId::Slug Load (0.4ms)[0m  SELECT `friendly_id_slugs`.* FROM `friendly_id_slugs` WHERE `friendly_id_slugs`.`sluggable_id` = 1 AND `friendly_id_slugs`.`sluggable_type` = 'Goldencobra::Article' ORDER BY `friendly_id_slugs`.id DESC LIMIT 1
+  [1m[36mFriendlyId::Slug Load (0.3ms)[0m  [1mSELECT id FROM `friendly_id_slugs` WHERE `friendly_id_slugs`.`sluggable_id` = 1 AND `friendly_id_slugs`.`sluggable_type` = 'Goldencobra::Article' AND `friendly_id_slugs`.`slug` = 'dies-ist-ein-test' ORDER BY `friendly_id_slugs`.id DESC FOR UPDATE[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `friendly_id_slugs` (`created_at`, `slug`, `sluggable_id`, `sluggable_type`) VALUES ('2012-04-11 23:21:11', 'dies-ist-ein-test', 1, 'Goldencobra::Article')
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_metatags` WHERE (article_id = 1 AND name = 'OpenGraph Image')[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'opengraph_default_image'
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'opengraph_default_image' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `goldencobra_metatags` (`article_id`, `created_at`, `name`, `updated_at`, `value`) VALUES (1, '2012-04-11 23:21:11', 'OpenGraph Image', '2012-04-11 23:21:11', '/assets/open-graph.png')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Started GET "/admin/articles" for 127.0.0.1 at 2012-04-12 01:21:11 +0200
+Processing by Admin::ArticlesController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mGoldencobra::Role Load (0.4ms)[0m  [1mSELECT `goldencobra_roles`.* FROM `goldencobra_roles` INNER JOIN `goldencobra_roles_users` ON `goldencobra_roles`.`id` = `goldencobra_roles_users`.`role_id` WHERE `goldencobra_roles_users`.`user_id` = 1[0m
+  [1m[35mGoldencobra::Permission Load (0.2ms)[0m  SELECT `goldencobra_permissions`.* FROM `goldencobra_permissions` WHERE `goldencobra_permissions`.`role_id` = 1
+  [1m[36mGoldencobra::Article Exists (0.4ms)[0m  [1mSELECT 1 FROM `goldencobra_articles` LIMIT 1 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` 
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `goldencobra_articles` LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mGoldencobra::Article Load (0.4ms)[0m  SELECT `goldencobra_articles`.* FROM `goldencobra_articles` ORDER BY `goldencobra_articles`.`id` desc LIMIT 30 OFFSET 0
+  [1m[36mGoldencobra::Article Load (0.4ms)[0m  [1mSELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`id` IN (1) ORDER BY (case when goldencobra_articles.ancestry is null then 0 else 1 end), goldencobra_articles.ancestry[0m
+  [1m[35mGoldencobra::Article Load (0.4ms)[0m  SELECT `goldencobra_articles`.* FROM `goldencobra_articles` ORDER BY title
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `goldencobra_articles`.* FROM `goldencobra_articles` ORDER BY title[0m
+  [1m[35mGoldencobra::Article Load (0.8ms)[0m  SELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`ancestry` IS NULL
+  [1m[36mGoldencobra::Article Load (0.4ms)[0m  [1mSELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`ancestry` = '1'[0m
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/Goldencobra-3a3e80860606/app/views/goldencobra/admin/shared/_item.html.erb (4.1ms)
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/Goldencobra-3a3e80860606/app/views/goldencobra/admin/shared/_overview.html.erb (8.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`ancestry` IS NULL
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`ancestry` = '1'[0m
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/Goldencobra-3a3e80860606/app/views/goldencobra/admin/shared/_item.html.erb (2.0ms)
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/Goldencobra-3a3e80860606/app/views/goldencobra/admin/shared/_overview.html.erb (2.8ms)
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/resource/index.html.arb (908.3ms)
+Completed 200 OK in 933ms (Views: 910.0ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/admin/articles/dies-ist-ein-test/edit" for 127.0.0.1 at 2012-04-12 01:21:12 +0200
+Processing by Admin::ArticlesController#edit as HTML
+  Parameters: {"id"=>"dies-ist-ein-test"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mGoldencobra::Role Load (0.3ms)[0m  [1mSELECT `goldencobra_roles`.* FROM `goldencobra_roles` INNER JOIN `goldencobra_roles_users` ON `goldencobra_roles`.`id` = `goldencobra_roles_users`.`role_id` WHERE `goldencobra_roles_users`.`user_id` = 1[0m
+  [1m[35mGoldencobra::Permission Load (0.3ms)[0m  SELECT `goldencobra_permissions`.* FROM `goldencobra_permissions` WHERE `goldencobra_permissions`.`role_id` = 1
+  [1m[36mGoldencobra::Article Load (0.6ms)[0m  [1mSELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`slug` = 'dies-ist-ein-test' LIMIT 1[0m
+  [1m[35mGoldencobra::Article Load (0.4ms)[0m  SELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`id` IN (1) ORDER BY (case when goldencobra_articles.ancestry is null then 0 else 1 end), goldencobra_articles.ancestry
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`id` IN (1) ORDER BY (case when goldencobra_articles.ancestry is null then 0 else 1 end), goldencobra_articles.ancestry[0m
+  [1m[35mGoldencobra::Metatag Load (0.3ms)[0m  SELECT `goldencobra_metatags`.* FROM `goldencobra_metatags` WHERE `goldencobra_metatags`.`article_id` = 1
+  [1m[36mGoldencobra::Article Load (0.5ms)[0m  [1mSELECT `goldencobra_articles`.* FROM `goldencobra_articles` [0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.3ms)[0m  SELECT `tags`.* FROM `tags` INNER JOIN `taggings` ON `tags`.`id` = `taggings`.`tag_id` WHERE `taggings`.`taggable_id` = 1 AND `taggings`.`taggable_type` = 'Goldencobra::Article' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)
+  [1m[36mGoldencobra::ArticleImage Load (0.2ms)[0m  [1mSELECT `goldencobra_article_images`.* FROM `goldencobra_article_images` WHERE `goldencobra_article_images`.`article_id` = 1[0m
+  [1m[35mGoldencobra::Upload Load (0.3ms)[0m  SELECT `goldencobra_uploads`.* FROM `goldencobra_uploads` 
+  [1m[36mGoldencobra::Widget Load (0.3ms)[0m  [1mSELECT `goldencobra_widgets`.* FROM `goldencobra_widgets` WHERE (active = true) ORDER BY title ASC[0m
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/Goldencobra-3a3e80860606/app/views/goldencobra/admin/articles/_widgets_sidebar.html.erb (4.7ms)
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/Goldencobra-3a3e80860606/app/views/goldencobra/admin/articles/_layout_sidebar.html.erb (6.9ms)
+  [1m[35mGoldencobra::Article Load (0.4ms)[0m  SELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/Goldencobra-3a3e80860606/app/views/goldencobra/admin/articles/_index_of_articles_sidebar.html.erb (84.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `goldencobra_uploads`.* FROM `goldencobra_uploads` [0m
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/Goldencobra-3a3e80860606/app/views/goldencobra/admin/articles/_image_module_sidebar.html.erb (1.6ms)
+  Rendered /Users/metz/git/goldencobra_newsletter/app/views/goldencobra_newsletter/admin/newsletters/_newsletter_module_sidebar.html.erb (5.5ms)
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/resource/edit.html.arb (709.7ms)
+Completed 500 Internal Server Error in 734ms
+  [1m[35m (0.7ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'admin@test.de' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `users` (`authentication_token`, `confirmation_sent_at`, `confirmation_token`, `confirmed_at`, `created_at`, `current_sign_in_at`, `current_sign_in_ip`, `email`, `encrypted_password`, `facebook`, `failed_attempts`, `fax`, `firstname`, `function`, `gender`, `googleplus`, `last_sign_in_at`, `last_sign_in_ip`, `lastname`, `linkedin`, `locked_at`, `password_salt`, `phone`, `remember_created_at`, `reset_password_sent_at`, `reset_password_token`, `sign_in_count`, `title`, `twitter`, `unconfirmed_email`, `unlock_token`, `updated_at`, `xing`) VALUES (NULL, NULL, NULL, '2012-01-09 13:28:58', '2012-04-11 23:21:13', NULL, NULL, 'admin@test.de', '$2a$04$T8Ly5smqaGS8J28gDewzSeeC/eeo1KBKF.iuQe5id7rasa56Kjlm2', NULL, 0, NULL, 'Admin', NULL, NULL, NULL, NULL, NULL, 'Goldencobra', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-04-11 23:21:13', NULL)[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `goldencobra_roles` (`created_at`, `description`, `name`, `updated_at`) VALUES ('2012-04-11 23:21:13', NULL, 'admin', '2012-04-11 23:21:13')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `goldencobra_permissions` (`action`, `created_at`, `role_id`, `subject_class`, `subject_id`, `updated_at`) VALUES ('manage', '2012-04-11 23:21:13', NULL, ':all', '', '2012-04-11 23:21:13')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  UPDATE `goldencobra_permissions` SET `role_id` = 2, `updated_at` = '2012-04-11 23:21:13' WHERE `goldencobra_permissions`.`id` = 2
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO `goldencobra_roles_users` (`user_id`, `role_id`) VALUES (2, 2)[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+
+
+Started GET "/admin/logout" for 127.0.0.1 at 2012-04-12 01:21:15 +0200
+Processing by ActiveAdmin::Devise::SessionsController#destroy as HTML
+Redirected to http://127.0.0.1:54297/admin
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-04-12 01:21:15 +0200
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-04-12 01:21:15 +0200
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/devise/shared/_links.erb (1.3ms)
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (36.8ms)
+Completed 200 OK in 51ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/active_admin.css" for 127.0.0.1 at 2012-04-12 01:21:15 +0200
+Compiled active_admin.css  (1843ms)  (pid 52085)
+Served asset /active_admin.css - 200 OK (1873ms)
+
+
+Started GET "/assets/goldencobra/chosen.css" for 127.0.0.1 at 2012-04-12 01:21:17 +0200
+Served asset /goldencobra/chosen.css - 404 Not Found (7ms)
+Processing by Goldencobra::ArticlesController#show as CSS
+  Parameters: {"article_id"=>"assets/goldencobra/chosen"}
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen'
+  [1m[36mGoldencobra::Article Load (0.4ms)[0m  [1mSELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1[0m
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 67ms (Views: 41.2ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/goldencobra/active_admin.css" for 127.0.0.1 at 2012-04-12 01:21:17 +0200
+Compiled goldencobra/active_admin.css  (1481ms)  (pid 52085)
+Served asset /goldencobra/active_admin.css - 200 OK (1493ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-04-12 01:21:19 +0200
+Served asset /active_admin.js - 404 Not Found (8ms)
+Processing by Goldencobra::ArticlesController#show as JS
+  Parameters: {"article_id"=>"assets/active_admin"}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'active_admin'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'active_admin'[0m
+  [1m[35mGoldencobra::Article Load (0.2ms)[0m  SELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 13ms (Views: 0.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/goldencobra/active_admin.js" for 127.0.0.1 at 2012-04-12 01:21:19 +0200
+Compiled jquery.js  (101ms)  (pid 52085)
+Compiled jquery-ui.js  (7ms)  (pid 52085)
+Compiled jquery_ujs.js  (0ms)  (pid 52085)
+Compiled active_admin/application.js  (0ms)  (pid 52085)
+Compiled active_admin/base.js  (139ms)  (pid 52085)
+Compiled goldencobra/active_admin.js  (148ms)  (pid 52085)
+Served asset /goldencobra/active_admin.js - 200 OK (278ms)
+
+
+Started GET "/assets/goldencobra/jquery.tinymce.js" for 127.0.0.1 at 2012-04-12 01:21:19 +0200
+Compiled goldencobra/jquery.tinymce.js  (0ms)  (pid 52085)
+Served asset /goldencobra/jquery.tinymce.js - 200 OK (14ms)
+
+
+Started GET "/assets/goldencobra/chosen.jquery.min.js" for 127.0.0.1 at 2012-04-12 01:21:19 +0200
+Served asset /goldencobra/chosen.jquery.min.js - 404 Not Found (7ms)
+Processing by Goldencobra::ArticlesController#show as JS
+  Parameters: {"article_id"=>"assets/goldencobra/chosen.jquery.min"}
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen.jquery.min'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen.jquery.min'
+  [1m[36mGoldencobra::Article Load (0.4ms)[0m  [1mSELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1[0m
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 29ms (Views: 0.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/active_admin/print.css" for 127.0.0.1 at 2012-04-12 01:21:19 +0200
+Compiled active_admin/print.css  (239ms)  (pid 52085)
+Served asset /active_admin/print.css - 200 OK (253ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-04-12 01:21:19 +0200
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/devise/shared/_links.erb (1.2ms)
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (210.2ms)
+Completed 200 OK in 239ms (Views: 237.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/goldencobra/chosen.jquery.min.js" for 127.0.0.1 at 2012-04-12 01:21:20 +0200
+Served asset /goldencobra/chosen.jquery.min.js - 404 Not Found (7ms)
+Processing by Goldencobra::ArticlesController#show as JS
+  Parameters: {"article_id"=>"assets/goldencobra/chosen.jquery.min"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen.jquery.min'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen.jquery.min'[0m
+  [1m[35mGoldencobra::Article Load (0.3ms)[0m  SELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 26ms (Views: 0.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-04-12 01:21:20 +0200
+Served asset /active_admin.js - 404 Not Found (6ms)
+Processing by Goldencobra::ArticlesController#show as JS
+  Parameters: {"article_id"=>"assets/active_admin"}
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'active_admin'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'active_admin'
+  [1m[36mGoldencobra::Article Load (0.4ms)[0m  [1mSELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1[0m
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 15ms (Views: 0.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/goldencobra/chosen.css" for 127.0.0.1 at 2012-04-12 01:21:20 +0200
+Served asset /goldencobra/chosen.css - 404 Not Found (7ms)
+Processing by Goldencobra::ArticlesController#show as CSS
+  Parameters: {"article_id"=>"assets/goldencobra/chosen"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen'[0m
+  [1m[35mGoldencobra::Article Load (0.3ms)[0m  SELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 24ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2012-04-12 01:21:20 +0200
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"admin@test.de", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@test.de' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2012-04-11 23:21:20', `current_sign_in_at` = '2012-04-11 23:21:20', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2012-04-11 23:21:20' WHERE `users`.`id` = 2[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://127.0.0.1:54297/admin
+Completed 302 Found in 24ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-04-12 01:21:20 +0200
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mGoldencobra::Role Load (0.3ms)[0m  SELECT `goldencobra_roles`.* FROM `goldencobra_roles` INNER JOIN `goldencobra_roles_users` ON `goldencobra_roles`.`id` = `goldencobra_roles_users`.`role_id` WHERE `goldencobra_roles_users`.`user_id` = 2
+  [1m[36mGoldencobra::Permission Load (0.3ms)[0m  [1mSELECT `goldencobra_permissions`.* FROM `goldencobra_permissions` WHERE `goldencobra_permissions`.`role_id` = 2[0m
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/dashboard/index.html.arb (15.5ms)
+Completed 200 OK in 34ms (Views: 16.6ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-04-12 01:21:20 +0200
+Served asset /active_admin.js - 404 Not Found (6ms)
+Processing by Goldencobra::ArticlesController#show as JS
+  Parameters: {"article_id"=>"assets/active_admin"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mGoldencobra::Role Load (0.3ms)[0m  [1mSELECT `goldencobra_roles`.* FROM `goldencobra_roles` INNER JOIN `goldencobra_roles_users` ON `goldencobra_roles`.`id` = `goldencobra_roles_users`.`role_id` WHERE `goldencobra_roles_users`.`user_id` = 2[0m
+  [1m[35mGoldencobra::Permission Load (0.2ms)[0m  SELECT `goldencobra_permissions`.* FROM `goldencobra_permissions` WHERE `goldencobra_permissions`.`role_id` = 2
+  [1m[36m (4.3ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'active_admin'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'active_admin'
+  [1m[36mGoldencobra::Article Load (0.4ms)[0m  [1mSELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1[0m
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 48ms (Views: 2.9ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/assets/goldencobra/chosen.jquery.min.js" for 127.0.0.1 at 2012-04-12 01:21:20 +0200
+Served asset /goldencobra/chosen.jquery.min.js - 404 Not Found (9ms)
+Processing by Goldencobra::ArticlesController#show as JS
+  Parameters: {"article_id"=>"assets/goldencobra/chosen.jquery.min"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mGoldencobra::Role Load (0.4ms)[0m  [1mSELECT `goldencobra_roles`.* FROM `goldencobra_roles` INNER JOIN `goldencobra_roles_users` ON `goldencobra_roles`.`id` = `goldencobra_roles_users`.`role_id` WHERE `goldencobra_roles_users`.`user_id` = 2[0m
+  [1m[35mGoldencobra::Permission Load (0.2ms)[0m  SELECT `goldencobra_permissions`.* FROM `goldencobra_permissions` WHERE `goldencobra_permissions`.`role_id` = 2
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen.jquery.min'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen.jquery.min'
+  [1m[36mGoldencobra::Article Load (0.4ms)[0m  [1mSELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1[0m
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 19ms (Views: 0.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/goldencobra/chosen.css" for 127.0.0.1 at 2012-04-12 01:21:20 +0200
+Served asset /goldencobra/chosen.css - 404 Not Found (11ms)
+Processing by Goldencobra::ArticlesController#show as CSS
+  Parameters: {"article_id"=>"assets/goldencobra/chosen"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mGoldencobra::Role Load (0.3ms)[0m  [1mSELECT `goldencobra_roles`.* FROM `goldencobra_roles` INNER JOIN `goldencobra_roles_users` ON `goldencobra_roles`.`id` = `goldencobra_roles_users`.`role_id` WHERE `goldencobra_roles_users`.`user_id` = 2[0m
+  [1m[35mGoldencobra::Permission Load (0.2ms)[0m  SELECT `goldencobra_permissions`.* FROM `goldencobra_permissions` WHERE `goldencobra_permissions`.`role_id` = 2
+  [1m[36m (1.3ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen'
+  [1m[36mGoldencobra::Article Load (0.4ms)[0m  [1mSELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1[0m
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 18ms (Views: 0.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/active_admin/nested_menu_arrow.gif" for 127.0.0.1 at 2012-04-12 01:21:20 +0200
+Served asset /active_admin/nested_menu_arrow.gif - 200 OK (21ms)
+
+
+Started GET "/assets/goldencobra/cobra.png" for 127.0.0.1 at 2012-04-12 01:21:20 +0200
+Served asset /goldencobra/cobra.png - 200 OK (16ms)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFriendlyId::Slug Load (0.4ms)[0m  [1mSELECT `friendly_id_slugs`.* FROM `friendly_id_slugs` WHERE `friendly_id_slugs`.`sluggable_type` = 'Goldencobra::Article' AND (slug = 'dies-ist-ein-test' OR slug LIKE 'dies-ist-ein-test--%') ORDER BY LENGTH(slug) DESC, slug DESC LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `goldencobra_articles` (`active`, `ancestry`, `article_for_index_count`, `article_for_index_id`, `article_for_index_images`, `article_for_index_levels`, `breadcrumb`, `canonical_url`, `content`, `context_info`, `created_at`, `enable_social_sharing`, `id`, `robots_no_index`, `slug`, `startpage`, `subtitle`, `summary`, `teaser`, `template_file`, `title`, `updated_at`, `url_name`) VALUES (1, NULL, 0, NULL, 0, 0, NULL, NULL, '\"Die kleine Maus wandert.\"', NULL, '2012-04-11 23:21:20', NULL, 1, 0, 'dies-ist-ein-test', 0, NULL, NULL, '\"Die kleine …\"', NULL, '\"Dies ist ein Test\"', '2012-04-11 23:21:20', 'dies-ist-ein-test')
+  [1m[36mFriendlyId::Slug Load (0.4ms)[0m  [1mSELECT `friendly_id_slugs`.* FROM `friendly_id_slugs` WHERE `friendly_id_slugs`.`sluggable_id` = 1 AND `friendly_id_slugs`.`sluggable_type` = 'Goldencobra::Article' ORDER BY `friendly_id_slugs`.id DESC LIMIT 1[0m
+  [1m[35mFriendlyId::Slug Load (0.3ms)[0m  SELECT id FROM `friendly_id_slugs` WHERE `friendly_id_slugs`.`sluggable_id` = 1 AND `friendly_id_slugs`.`sluggable_type` = 'Goldencobra::Article' AND `friendly_id_slugs`.`slug` = 'dies-ist-ein-test' ORDER BY `friendly_id_slugs`.id DESC FOR UPDATE
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `friendly_id_slugs` (`created_at`, `slug`, `sluggable_id`, `sluggable_type`) VALUES ('2012-04-11 23:21:20', 'dies-ist-ein-test', 1, 'Goldencobra::Article')[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `goldencobra_metatags` WHERE (article_id = 1 AND name = 'OpenGraph Image')
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'opengraph_default_image'[0m
+  [1m[35mGoldencobra::Setting Load (0.4ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'opengraph_default_image' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `goldencobra_metatags` (`article_id`, `created_at`, `name`, `updated_at`, `value`) VALUES (1, '2012-04-11 23:21:20', 'OpenGraph Image', '2012-04-11 23:21:20', '/assets/open-graph.png')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mSELECT DATABASE() as db[0m
+  [1m[35m (0.9ms)[0m  select table_name from information_schema.views where table_schema = 'goldencobra-newsletter-test'
+  [1m[36m (1.2ms)[0m  [1mTRUNCATE TABLE `active_admin_comments`;[0m
+  [1m[35m (1.2ms)[0m  TRUNCATE TABLE `friendly_id_slugs`;
+  [1m[36m (1.4ms)[0m  [1mTRUNCATE TABLE `goldencobra_article_images`;[0m
+  [1m[35m (1.0ms)[0m  TRUNCATE TABLE `goldencobra_article_widgets`;
+  [1m[36m (1.4ms)[0m  [1mTRUNCATE TABLE `goldencobra_articles`;[0m
+  [1m[35m (0.8ms)[0m  TRUNCATE TABLE `goldencobra_helps`;
+  [1m[36m (1.1ms)[0m  [1mTRUNCATE TABLE `goldencobra_locations`;[0m
+  [1m[35m (1.2ms)[0m  TRUNCATE TABLE `goldencobra_menues`;
+  [1m[36m (2.6ms)[0m  [1mTRUNCATE TABLE `goldencobra_metatags`;[0m
+  [1m[35m (0.9ms)[0m  TRUNCATE TABLE `goldencobra_permissions`;
+  [1m[36m (0.9ms)[0m  [1mTRUNCATE TABLE `goldencobra_roles`;[0m
+  [1m[35m (0.8ms)[0m  TRUNCATE TABLE `goldencobra_roles_users`;
+  [1m[36m (0.8ms)[0m  [1mTRUNCATE TABLE `goldencobra_settings`;[0m
+  [1m[35m (0.8ms)[0m  TRUNCATE TABLE `goldencobra_uploads`;
+  [1m[36m (0.8ms)[0m  [1mTRUNCATE TABLE `goldencobra_widgets`;[0m
+  [1m[35m (1.1ms)[0m  TRUNCATE TABLE `taggings`;
+  [1m[36m (1.0ms)[0m  [1mTRUNCATE TABLE `tags`;[0m
+  [1m[35m (1.8ms)[0m  TRUNCATE TABLE `users`;
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (1.7ms)[0m  [1mSELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'admin@test.de' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `users` (`authentication_token`, `confirmation_sent_at`, `confirmation_token`, `confirmed_at`, `created_at`, `current_sign_in_at`, `current_sign_in_ip`, `email`, `encrypted_password`, `facebook`, `failed_attempts`, `fax`, `firstname`, `function`, `gender`, `googleplus`, `last_sign_in_at`, `last_sign_in_ip`, `lastname`, `linkedin`, `locked_at`, `password_salt`, `phone`, `remember_created_at`, `reset_password_sent_at`, `reset_password_token`, `sign_in_count`, `title`, `twitter`, `unconfirmed_email`, `unlock_token`, `updated_at`, `xing`) VALUES (NULL, NULL, NULL, '2012-01-09 13:28:58', '2012-04-11 23:21:21', NULL, NULL, 'admin@test.de', '$2a$04$4tgOoCS9eBgu2SX5t4oAL.i/fHCUaPwZWSScUEa5l4S9JUIhIYqC6', NULL, 0, NULL, 'Admin', NULL, NULL, NULL, NULL, NULL, 'Goldencobra', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-04-11 23:21:21', NULL)
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `goldencobra_roles` (`created_at`, `description`, `name`, `updated_at`) VALUES ('2012-04-11 23:21:21', NULL, 'admin', '2012-04-11 23:21:21')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `goldencobra_permissions` (`action`, `created_at`, `role_id`, `subject_class`, `subject_id`, `updated_at`) VALUES ('manage', '2012-04-11 23:21:21', NULL, ':all', '', '2012-04-11 23:21:21')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mUPDATE `goldencobra_permissions` SET `role_id` = 1, `updated_at` = '2012-04-11 23:21:21' WHERE `goldencobra_permissions`.`id` = 1[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO `goldencobra_roles_users` (`user_id`, `role_id`) VALUES (1, 1)
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/admin/logout" for 127.0.0.1 at 2012-04-12 01:21:21 +0200
+Processing by ActiveAdmin::Devise::SessionsController#destroy as HTML
+Redirected to http://127.0.0.1:54297/admin
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-04-12 01:21:21 +0200
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-04-12 01:21:21 +0200
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/devise/shared/_links.erb (1.1ms)
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (31.9ms)
+Completed 200 OK in 41ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/goldencobra/chosen.css" for 127.0.0.1 at 2012-04-12 01:21:21 +0200
+Served asset /goldencobra/chosen.css - 404 Not Found (8ms)
+Processing by Goldencobra::ArticlesController#show as CSS
+  Parameters: {"article_id"=>"assets/goldencobra/chosen"}
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen'[0m
+  [1m[35mGoldencobra::Article Load (0.7ms)[0m  SELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 31ms (Views: 0.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-04-12 01:21:21 +0200
+Served asset /active_admin.js - 404 Not Found (7ms)
+Processing by Goldencobra::ArticlesController#show as JS
+  Parameters: {"article_id"=>"assets/active_admin"}
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'active_admin'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'active_admin'
+  [1m[36mGoldencobra::Article Load (0.3ms)[0m  [1mSELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1[0m
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 21ms (Views: 0.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/goldencobra/chosen.jquery.min.js" for 127.0.0.1 at 2012-04-12 01:21:21 +0200
+Served asset /goldencobra/chosen.jquery.min.js - 404 Not Found (8ms)
+Processing by Goldencobra::ArticlesController#show as JS
+  Parameters: {"article_id"=>"assets/goldencobra/chosen.jquery.min"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen.jquery.min'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen.jquery.min'[0m
+  [1m[35mGoldencobra::Article Load (0.5ms)[0m  SELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 26ms (Views: 1.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-04-12 01:21:21 +0200
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/devise/shared/_links.erb (1.2ms)
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (34.9ms)
+Completed 200 OK in 44ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-04-12 01:21:21 +0200
+Served asset /active_admin.js - 404 Not Found (9ms)
+Processing by Goldencobra::ArticlesController#show as JS
+  Parameters: {"article_id"=>"assets/active_admin"}
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'active_admin'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'active_admin'
+  [1m[36mGoldencobra::Article Load (0.3ms)[0m  [1mSELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1[0m
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 16ms (Views: 0.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/goldencobra/chosen.jquery.min.js" for 127.0.0.1 at 2012-04-12 01:21:21 +0200
+Served asset /goldencobra/chosen.jquery.min.js - 404 Not Found (102ms)
+Processing by Goldencobra::ArticlesController#show as JS
+  Parameters: {"article_id"=>"assets/goldencobra/chosen.jquery.min"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen.jquery.min'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen.jquery.min'[0m
+  [1m[35mGoldencobra::Article Load (0.3ms)[0m  SELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 13ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/goldencobra/chosen.css" for 127.0.0.1 at 2012-04-12 01:21:22 +0200
+Served asset /goldencobra/chosen.css - 404 Not Found (8ms)
+Processing by Goldencobra::ArticlesController#show as CSS
+  Parameters: {"article_id"=>"assets/goldencobra/chosen"}
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen'
+  [1m[36mGoldencobra::Article Load (0.2ms)[0m  [1mSELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1[0m
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 12ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2012-04-12 01:21:22 +0200
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"admin@test.de", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@test.de' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2012-04-11 23:21:22', `current_sign_in_at` = '2012-04-11 23:21:22', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2012-04-11 23:21:22' WHERE `users`.`id` = 1
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:54297/admin
+Completed 302 Found in 14ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-04-12 01:21:22 +0200
+Processing by Admin::DashboardController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mGoldencobra::Role Load (0.4ms)[0m  [1mSELECT `goldencobra_roles`.* FROM `goldencobra_roles` INNER JOIN `goldencobra_roles_users` ON `goldencobra_roles`.`id` = `goldencobra_roles_users`.`role_id` WHERE `goldencobra_roles_users`.`user_id` = 1[0m
+  [1m[35mGoldencobra::Permission Load (0.2ms)[0m  SELECT `goldencobra_permissions`.* FROM `goldencobra_permissions` WHERE `goldencobra_permissions`.`role_id` = 1
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra-newsletter/bundler/gems/active_admin-2c50f7718f24/app/views/active_admin/dashboard/index.html.arb (12.6ms)
+Completed 200 OK in 19ms (Views: 13.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/goldencobra/chosen.css" for 127.0.0.1 at 2012-04-12 01:21:22 +0200
+Served asset /goldencobra/chosen.css - 404 Not Found (7ms)
+Processing by Goldencobra::ArticlesController#show as CSS
+  Parameters: {"article_id"=>"assets/goldencobra/chosen"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mGoldencobra::Role Load (0.3ms)[0m  SELECT `goldencobra_roles`.* FROM `goldencobra_roles` INNER JOIN `goldencobra_roles_users` ON `goldencobra_roles`.`id` = `goldencobra_roles_users`.`role_id` WHERE `goldencobra_roles_users`.`user_id` = 1
+  [1m[36mGoldencobra::Permission Load (0.2ms)[0m  [1mSELECT `goldencobra_permissions`.* FROM `goldencobra_permissions` WHERE `goldencobra_permissions`.`role_id` = 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen'[0m
+  [1m[35mGoldencobra::Article Load (0.4ms)[0m  SELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 19ms (Views: 0.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/goldencobra/chosen.jquery.min.js" for 127.0.0.1 at 2012-04-12 01:21:22 +0200
+Served asset /goldencobra/chosen.jquery.min.js - 404 Not Found (93ms)
+Processing by Goldencobra::ArticlesController#show as JS
+  Parameters: {"article_id"=>"assets/goldencobra/chosen.jquery.min"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mGoldencobra::Role Load (0.3ms)[0m  SELECT `goldencobra_roles`.* FROM `goldencobra_roles` INNER JOIN `goldencobra_roles_users` ON `goldencobra_roles`.`id` = `goldencobra_roles_users`.`role_id` WHERE `goldencobra_roles_users`.`user_id` = 1
+  [1m[36mGoldencobra::Permission Load (0.2ms)[0m  [1mSELECT `goldencobra_permissions`.* FROM `goldencobra_permissions` WHERE `goldencobra_permissions`.`role_id` = 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen.jquery.min'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'chosen.jquery.min'[0m
+  [1m[35mGoldencobra::Article Load (0.3ms)[0m  SELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 17ms (Views: 0.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-04-12 01:21:22 +0200
+Served asset /active_admin.js - 404 Not Found (7ms)
+Processing by Goldencobra::ArticlesController#show as JS
+  Parameters: {"article_id"=>"assets/active_admin"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mGoldencobra::Role Load (0.3ms)[0m  SELECT `goldencobra_roles`.* FROM `goldencobra_roles` INNER JOIN `goldencobra_roles_users` ON `goldencobra_roles`.`id` = `goldencobra_roles_users`.`role_id` WHERE `goldencobra_roles_users`.`user_id` = 1
+  [1m[36mGoldencobra::Permission Load (0.2ms)[0m  [1mSELECT `goldencobra_permissions`.* FROM `goldencobra_permissions` WHERE `goldencobra_permissions`.`role_id` = 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'active_admin'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_articles` WHERE `goldencobra_articles`.`active` = 1 AND `goldencobra_articles`.`url_name` = 'active_admin'[0m
+  [1m[35mGoldencobra::Article Load (0.2ms)[0m  SELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE `goldencobra_articles`.`url_name` = '404' LIMIT 1
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 16ms (Views: 0.4ms | ActiveRecord: 1.5ms)
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mFriendlyId::Slug Load (0.5ms)[0m  SELECT `friendly_id_slugs`.* FROM `friendly_id_slugs` WHERE `friendly_id_slugs`.`sluggable_type` = 'Goldencobra::Article' AND (slug = 'dies-ist-ein-test' OR slug LIKE 'dies-ist-ein-test--%') ORDER BY LENGTH(slug) DESC, slug DESC LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `goldencobra_articles` (`active`, `ancestry`, `article_for_index_count`, `article_for_index_id`, `article_for_index_images`, `article_for_index_levels`, `breadcrumb`, `canonical_url`, `content`, `context_info`, `created_at`, `enable_social_sharing`, `id`, `robots_no_index`, `slug`, `startpage`, `subtitle`, `summary`, `teaser`, `template_file`, `title`, `updated_at`, `url_name`) VALUES (1, NULL, 0, NULL, 0, 0, NULL, NULL, '\"Die kleine Maus wandert.\"', NULL, '2012-04-11 23:21:22', NULL, 1, 0, 'dies-ist-ein-test', 0, NULL, NULL, '\"Die kleine …\"', NULL, '\"Dies ist ein Test\"', '2012-04-11 23:21:22', 'dies-ist-ein-test')[0m
+  [1m[35mFriendlyId::Slug Load (0.3ms)[0m  SELECT `friendly_id_slugs`.* FROM `friendly_id_slugs` WHERE `friendly_id_slugs`.`sluggable_id` = 1 AND `friendly_id_slugs`.`sluggable_type` = 'Goldencobra::Article' ORDER BY `friendly_id_slugs`.id DESC LIMIT 1
+  [1m[36mFriendlyId::Slug Load (0.2ms)[0m  [1mSELECT id FROM `friendly_id_slugs` WHERE `friendly_id_slugs`.`sluggable_id` = 1 AND `friendly_id_slugs`.`sluggable_type` = 'Goldencobra::Article' AND `friendly_id_slugs`.`slug` = 'dies-ist-ein-test' ORDER BY `friendly_id_slugs`.id DESC FOR UPDATE[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `friendly_id_slugs` (`created_at`, `slug`, `sluggable_id`, `sluggable_type`) VALUES ('2012-04-11 23:21:22', 'dies-ist-ein-test', 1, 'Goldencobra::Article')
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_metatags` WHERE (article_id = 1 AND name = 'OpenGraph Image')[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'opengraph_default_image'
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'opengraph_default_image'[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `goldencobra_metatags` (`article_id`, `created_at`, `name`, `updated_at`, `value`) VALUES (1, '2012-04-11 23:21:22', 'OpenGraph Image', '2012-04-11 23:21:22', 'opengraph_default_image')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (1.6ms)[0m  TRUNCATE TABLE `active_admin_comments`;
+  [1m[36m (4.7ms)[0m  [1mTRUNCATE TABLE `friendly_id_slugs`;[0m
+  [1m[35m (0.9ms)[0m  TRUNCATE TABLE `goldencobra_article_images`;
+  [1m[36m (0.8ms)[0m  [1mTRUNCATE TABLE `goldencobra_article_widgets`;[0m
+  [1m[35m (1.3ms)[0m  TRUNCATE TABLE `goldencobra_articles`;
+  [1m[36m (0.8ms)[0m  [1mTRUNCATE TABLE `goldencobra_helps`;[0m
+  [1m[35m (0.8ms)[0m  TRUNCATE TABLE `goldencobra_locations`;
+  [1m[36m (1.0ms)[0m  [1mTRUNCATE TABLE `goldencobra_menues`;[0m
+  [1m[35m (0.8ms)[0m  TRUNCATE TABLE `goldencobra_metatags`;
+  [1m[36m (0.8ms)[0m  [1mTRUNCATE TABLE `goldencobra_permissions`;[0m
+  [1m[35m (0.7ms)[0m  TRUNCATE TABLE `goldencobra_roles`;
+  [1m[36m (0.7ms)[0m  [1mTRUNCATE TABLE `goldencobra_roles_users`;[0m
+  [1m[35m (0.8ms)[0m  TRUNCATE TABLE `goldencobra_settings`;
+  [1m[36m (0.8ms)[0m  [1mTRUNCATE TABLE `goldencobra_uploads`;[0m
+  [1m[35m (0.8ms)[0m  TRUNCATE TABLE `goldencobra_widgets`;
+  [1m[36m (1.0ms)[0m  [1mTRUNCATE TABLE `taggings`;[0m
+  [1m[35m (0.9ms)[0m  TRUNCATE TABLE `tags`;
+  [1m[36m (2.0ms)[0m  [1mTRUNCATE TABLE `users`;[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1

@@ -1,0 +1,14 @@
+de:
+  active_admin:
+    resource:
+      email_template:
+        one: "Email Template"
+        other: "Email Templates"
+    yes: "Ja"
+    no: "Nein"
+  activerecord:
+    models:
+      email_template: 
+        one: "Email Template"
+        other: "Email Templates"
+    attributes:

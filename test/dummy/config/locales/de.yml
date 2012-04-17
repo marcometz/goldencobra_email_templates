@@ -1,0 +1,8 @@
+de:
+  active_admin:
+    resource:
+    subscriber: "Abonnent"
+    company: "Unternehmen"
+    user: "Nutzer"
+    is_subscriber: "Abonnement aktiv?"
+  yes: "Ja"
