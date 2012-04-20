@@ -37,7 +37,7 @@ ActiveAdmin.register GoldencobraEmailTemplates::EmailTemplate, :as => "Email Tem
     ul do
       li "{{ user.anrede }}"
       li "{{ user.firstname }}"
-    en
+    end
   end
 
 
