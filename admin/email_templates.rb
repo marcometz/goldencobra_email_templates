@@ -34,9 +34,14 @@ ActiveAdmin.register GoldencobraEmailTemplates::EmailTemplate, :as => "Email Tem
   end
   
   sidebar "Hilfe", :only => [:edit] do
+    h3 raw("Folgende Felder sind derzeit verf&uuml;gbar")
     ul do
       li "{{ user.anrede }}"
       li "{{ user.firstname }}"
+      li "{{ user.lastname }}"
+      li "{{ user.gender }}"
+      li "{{ user.title }}"
+      li "{{ user.function }}"
     end
   end
 
