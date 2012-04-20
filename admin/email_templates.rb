@@ -1,6 +1,6 @@
 ActiveAdmin.register GoldencobraEmailTemplates::EmailTemplate, :as => "Email Template" do
 
-  :parent => "Content-Management", :label => "Email Vorlagen", :if => proc{can?(:read, Goldencobra::Article)}
+  menu :parent => "Content-Management", :label => "Email Vorlagen", :if => proc{can?(:read, Goldencobra::Article)}
   
   controller.authorize_resource :class => GoldencobraEmailTemplates::EmailTemplate
   filter :title
@@ -31,6 +31,13 @@ ActiveAdmin.register GoldencobraEmailTemplates::EmailTemplate, :as => "Email Tem
     f.inputs :class => "buttons inputs" do
       f.actions
     end
+  end
+  
+  sidebar "Hilfe", :only => [:edit] do
+    ul do
+      li "{{ user.anrede }}"
+      li "{{ user.firstname }}"
+    en
   end
 
 
