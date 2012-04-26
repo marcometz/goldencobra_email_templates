@@ -6,7 +6,7 @@ GIT
 
 GIT
   remote: git://github.com/ikusei/Goldencobra.git
-  revision: fbf914ae31997ed499a97fcb05fa0fe78edc2561
+  revision: a6f969206c24f5b99bc4669024202cd923329fb8
   specs:
     goldencobra (1.0.3)
       activeadmin
@@ -39,7 +39,7 @@ GIT
 
 GIT
   remote: git://github.com/ikusei/Goldencobra_Events.git
-  revision: 20a1b2eb3c8d9df7a96c3afcf3ed041f8d062407
+  revision: 1151253a11ffa6db28280b81d1c6423bbb63c685
   specs:
     goldencobra_events (1.0.1)
       andand
@@ -51,7 +51,7 @@ GIT
 
 GIT
   remote: git://github.com/ikusei/active_admin.git
-  revision: 64cf91e94ae772c92a64f4f4a3dd0f819816698a
+  revision: 93e4198d56375de6e28dd72b98e121ac37c4dfaf
   specs:
     activeadmin (0.4.3)
       bourbon (>= 1.0.0)
@@ -277,7 +277,7 @@ GEM
     polyamorous (0.5.0)
       activerecord (~> 3.0)
     polyglot (0.3.3)
-    pry (0.9.9.3)
+    pry (0.9.9.4)
       coderay (~> 1.0.5)
       method_source (~> 0.7.1)
       slop (>= 2.4.4, < 3)
