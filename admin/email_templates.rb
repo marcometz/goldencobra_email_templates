@@ -45,5 +45,4 @@ ActiveAdmin.register GoldencobraEmailTemplates::EmailTemplate, :as => "Email Tem
     end
   end
 
-
 end
