@@ -1,0 +1,13 @@
+de:
+    activerecord:
+        models:
+            email template:
+                one: "Email Vorlage"
+                other: "Email Vorlagen"
+            goldencobra_email_templates/email_template:
+                one: "Email Vorlage"
+                other: "Email Vorlagen"                
+        attributes:
+            goldencobra_email_templates/email_template:
+                title: "Title"
+        
