@@ -10,4 +10,5 @@ de:
         attributes:
             goldencobra_email_templates/email_template:
                 title: "Title"
+                subject: "Betreff"
         
