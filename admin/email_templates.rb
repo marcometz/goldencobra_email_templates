@@ -17,6 +17,7 @@ ActiveAdmin.register GoldencobraEmailTemplates::EmailTemplate, :as => "Email Tem
     end
     f.inputs "Allgemein" do
       f.input :title
+      f.input :subject 
       f.input :bcc
     end
     f.inputs "Mail Body" do

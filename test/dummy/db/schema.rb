@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120417134807) do
+ActiveRecord::Schema.define(:version => 20120502084513) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.integer  "resource_id",   :null => false
@@ -90,6 +90,7 @@ ActiveRecord::Schema.define(:version => 20120417134807) do
     t.string   "layout_file"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+    t.string   "subject"
   end
 
   create_table "goldencobra_helps", :force => true do |t|
