@@ -11,6 +11,7 @@ gem 'compass-rails'
 gem "rspec-rails", :group => [:test, :development] # rspec in dev so the rake tasks run properly
 
 group :development do
+  gem 'git-pivotal'
   gem 'thin'
   gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
   gem 'guard-annotate'
