@@ -76,6 +76,17 @@ ActiveRecord::Schema.define(:version => 20120502084513) do
     t.integer  "article_for_index_count",  :default => 0
     t.boolean  "enable_social_sharing"
     t.boolean  "article_for_index_images", :default => false
+    t.boolean  "cacheable",                :default => true
+    t.string   "image_gallery_tags"
+    t.integer  "event_id"
+    t.integer  "event_levels",             :default => 0
+    t.string   "eventmoduletype"
+    t.text     "artist_list"
+    t.integer  "event_for_artists_id"
+    t.integer  "event_for_artists_levels"
+    t.text     "sponsor_list"
+    t.integer  "event_for_sponsor_id"
+    t.integer  "event_for_sponsor_levels", :default => 0
   end
 
   add_index "goldencobra_articles", ["ancestry"], :name => "index_goldencobra_articles_on_ancestry"
@@ -91,6 +102,173 @@ ActiveRecord::Schema.define(:version => 20120502084513) do
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
     t.string   "subject"
+  end
+
+  create_table "goldencobra_events_artist_events", :force => true do |t|
+    t.integer  "artist_id"
+    t.integer  "event_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "goldencobra_events_artist_images", :force => true do |t|
+    t.integer  "image_id"
+    t.integer  "artist_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "goldencobra_events_artist_sponsors", :force => true do |t|
+    t.integer  "artist_id"
+    t.integer  "sponsor_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "goldencobra_events_artists", :force => true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.string   "url_link"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.string   "telephone"
+    t.string   "email"
+    t.integer  "location_id"
+  end
+
+  create_table "goldencobra_events_companies", :force => true do |t|
+    t.string   "title"
+    t.string   "legal_form"
+    t.integer  "location_id"
+    t.string   "phone"
+    t.string   "fax"
+    t.string   "homepage"
+    t.string   "sector"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "goldencobra_events_event_pricegroups", :force => true do |t|
+    t.integer  "event_id"
+    t.integer  "pricegroup_id"
+    t.float    "price",                       :default => 0.0
+    t.integer  "max_number_of_participators", :default => 0
+    t.datetime "cancelation_until"
+    t.datetime "start_reservation"
+    t.datetime "end_reservation"
+    t.boolean  "available",                   :default => true
+    t.datetime "created_at",                                    :null => false
+    t.datetime "updated_at",                                    :null => false
+    t.string   "webcode"
+  end
+
+  create_table "goldencobra_events_event_registrations", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "event_pricegroup_id"
+    t.boolean  "canceled",            :default => false
+    t.datetime "canceled_at"
+    t.datetime "created_at",                             :null => false
+    t.datetime "updated_at",                             :null => false
+  end
+
+  create_table "goldencobra_events_event_sponsors", :force => true do |t|
+    t.integer  "event_id"
+    t.integer  "sponsor_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "goldencobra_events_events", :force => true do |t|
+    t.string   "ancestry"
+    t.string   "title"
+    t.text     "description"
+    t.datetime "created_at",                                     :null => false
+    t.datetime "updated_at",                                     :null => false
+    t.boolean  "active",                      :default => true
+    t.string   "external_link"
+    t.integer  "max_number_of_participators", :default => 0
+    t.string   "type_of_event"
+    t.string   "type_of_registration"
+    t.boolean  "exclusive",                   :default => false
+    t.datetime "start_date"
+    t.datetime "end_date"
+    t.integer  "panel_id"
+    t.integer  "venue_id"
+    t.integer  "teaser_image_id"
+  end
+
+  create_table "goldencobra_events_panel_sponsors", :force => true do |t|
+    t.integer  "panel_id"
+    t.integer  "sponsor_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "goldencobra_events_panels", :force => true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.string   "link_url"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "goldencobra_events_pricegroups", :force => true do |t|
+    t.string   "title"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "goldencobra_events_registration_users", :force => true do |t|
+    t.integer  "user_id"
+    t.boolean  "gender"
+    t.string   "email"
+    t.string   "title"
+    t.string   "firstname"
+    t.string   "lastname"
+    t.string   "function"
+    t.string   "phone"
+    t.boolean  "agb"
+    t.integer  "company_id"
+    t.datetime "created_at",                                   :null => false
+    t.datetime "updated_at",                                   :null => false
+    t.string   "type_of_registration", :default => "Webseite"
+    t.text     "comment"
+    t.datetime "invoice_sent"
+    t.datetime "payed_on"
+    t.datetime "first_reminder_sent"
+    t.datetime "second_reminder_sent"
+  end
+
+  create_table "goldencobra_events_sponsor_images", :force => true do |t|
+    t.integer  "sponsor_id"
+    t.integer  "image_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "goldencobra_events_sponsors", :force => true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.string   "link_url"
+    t.string   "size_of_sponsorship"
+    t.string   "type_of_sponsorship"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
+    t.integer  "location_id"
+    t.string   "telephone"
+    t.string   "email"
+    t.integer  "logo_id"
+  end
+
+  create_table "goldencobra_events_venues", :force => true do |t|
+    t.integer  "location_id"
+    t.string   "title"
+    t.text     "description"
+    t.string   "link_url"
+    t.string   "phone"
+    t.string   "email"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "goldencobra_helps", :force => true do |t|
@@ -250,6 +428,8 @@ ActiveRecord::Schema.define(:version => 20120502084513) do
     t.string   "linkedin"
     t.string   "xing"
     t.string   "googleplus"
+    t.integer  "company_id"
+    t.boolean  "newsletter"
   end
 
   add_index "users", ["authentication_token"], :name => "index_users_on_authentication_token", :unique => true
