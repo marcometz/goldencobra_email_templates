@@ -5471,3 +5471,4 @@ Completed 404 Not Found in 11ms (Views: 0.4ms | ActiveRecord: 1.3ms)
   [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'subject' LIMIT 1
   [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'reply_to'[0m
   [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'reply_to' LIMIT 1
+Mysql2::Error: Table 'goldencobra-email-templates-test.goldencobra_settings' doesn't exist: SHOW FULL FIELDS FROM `goldencobra_settings`
