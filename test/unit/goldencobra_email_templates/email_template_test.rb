@@ -12,6 +12,7 @@
 #  created_at   :datetime        not null
 #  updated_at   :datetime        not null
 #  subject      :string(255)
+#  template_tag :string(255)
 #
 
 require 'test_helper'

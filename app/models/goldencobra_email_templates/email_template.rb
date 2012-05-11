@@ -12,11 +12,12 @@
 #  created_at   :datetime        not null
 #  updated_at   :datetime        not null
 #  subject      :string(255)
+#  template_tag :string(255)
 #
 
 module GoldencobraEmailTemplates
   class EmailTemplate < ActiveRecord::Base
-    attr_accessible :bcc, :content_html, :content_txt, :custom_css, :layout_file, :title, :subject
+    attr_accessible :bcc, :content_html, :content_txt, :custom_css, :layout_file, :title, :subject, :template_tag
     
     if ActiveRecord::Base.connection.table_exists?("goldencobra_settings")
       after_save Goldencobra::Setting.new
