@@ -18,6 +18,7 @@
 module GoldencobraEmailTemplates
   class EmailTemplate < ActiveRecord::Base
     attr_accessible :bcc, :content_html, :content_txt, :custom_css, :layout_file, :title, :subject, :template_tag
+    LiquidParser = {}
     
     if ActiveRecord::Base.connection.table_exists?("goldencobra_settings")
       after_save Goldencobra::Setting.new

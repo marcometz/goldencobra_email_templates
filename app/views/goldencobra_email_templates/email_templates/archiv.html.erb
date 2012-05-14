@@ -1,0 +1,5 @@
+<h1><%= t(:old_newsletters, scope: [:email_templates, :archive, :headline]) %></h1>
+
+<% @old_newsletters.each do |newsletter| %>
+  <%= link_to "#{newsletter.title}", show_email_template_path(newsletter.id) %>
+<% end %>
