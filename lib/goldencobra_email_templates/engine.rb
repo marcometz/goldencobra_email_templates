@@ -6,6 +6,7 @@ module GoldencobraEmailTemplates
     config.to_prepare do
       ApplicationController.helper(GoldencobraEmailTemplates::ApplicationHelper)
       ActionController::Base.helper(GoldencobraEmailTemplates::ApplicationHelper)
+      DeviseController.helper(GoldencobraEmailTemplates::ApplicationHelper)             
     end
 
   end
