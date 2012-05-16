@@ -8,6 +8,7 @@ ActiveAdmin.register GoldencobraEmailTemplates::EmailTemplate, :as => "Email Tem
   index do
     column :title
     column :layout_file
+    column :template_tag
     default_actions
   end
   
@@ -18,6 +19,7 @@ ActiveAdmin.register GoldencobraEmailTemplates::EmailTemplate, :as => "Email Tem
     f.inputs "Allgemein" do
       f.input :title
       f.input :subject 
+      f.input :template_tag
       f.input :bcc
     end
     f.inputs "Mail Body" do

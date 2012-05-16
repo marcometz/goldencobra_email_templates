@@ -1,0 +1,3 @@
+<% template = Liquid::Template.parse(@newsletter.content_html) %>
+<%= raw(template.render(GoldencobraEmailTemplates::EmailTemplate::LiquidParser)) %>
+

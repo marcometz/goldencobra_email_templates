@@ -57,4 +57,12 @@ FactoryGirl.define do
     p.subject_id ""
   end
   
+  factory :email_template, class: GoldencobraEmailTemplates::EmailTemplate do |r|
+    r.content_html "<div>Emails are great</div>"
+    r.content_txt "Emails are great"
+    r.title "Newsletters are great"
+    r.subject "Awesome Email incoming"
+    r.template_tag "my template tag"
+  end
+
 end
