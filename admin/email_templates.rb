@@ -39,12 +39,12 @@ ActiveAdmin.register GoldencobraEmailTemplates::EmailTemplate, :as => "Email Tem
   sidebar "Hilfe", :only => [:edit] do
     h3 raw("Folgende Felder sind derzeit verf&uuml;gbar")
     ul do
-      li "{{ user.anrede }}"
-      li "{{ user.firstname }}"
-      li "{{ user.lastname }}"
-      li "{{ user.gender }}"
-      li "{{ user.title }}"
-      li "{{ user.function }}"
+      li "{{ user.anrede }}  => Sehr geehrter Herr Bauer"
+      li "{{ user.firstname }}  => Martin"
+      li "{{ user.lastname }}  => Bauer"
+      li "{{ user.gender }} => true/false"
+      li "{{ user.title }} => Dr."
+      li "{{ user.function }} => Berater"
     end
   end
 

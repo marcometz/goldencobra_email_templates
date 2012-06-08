@@ -21,8 +21,8 @@ module GoldencobraEmailTemplates
     LiquidParser = {}
     
     if ActiveRecord::Base.connection.table_exists?("goldencobra_settings")
-      after_save Goldencobra::Setting.new
-      after_destroy Goldencobra::Setting.new
+      after_save 'Goldencobra::Setting.regenerate_active_admin'
+      after_destroy 'Goldencobra::Setting.regenerate_active_admin'
     end
     
   end
