@@ -6,7 +6,7 @@ GIT
 
 GIT
   remote: git://github.com/ikusei/Goldencobra.git
-  revision: c6c1904972d7aa248f375056fc61743cbf92babb
+  revision: c926d6c317ba51071d7ddc7f6690540be262df9c
   specs:
     goldencobra (1.0.3)
       activeadmin
@@ -29,6 +29,7 @@ GIT
       oa-openid
       omniauth
       omniauth-openid
+      paper_trail
       paperclip
       rails (~> 3.2.3)
       rubyzip
@@ -52,7 +53,7 @@ GIT
 
 GIT
   remote: git://github.com/ikusei/active_admin.git
-  revision: 72fa5ef451689813dada9d742ba26a0431fc2413
+  revision: 3b70da9089e1790e0e9d4bdee1b42b94687d1985
   specs:
     activeadmin (0.4.4)
       bourbon (>= 1.0.0)
@@ -275,6 +276,9 @@ GEM
       omniauth (~> 1.0)
       rack-openid (~> 1.3.1)
     orm_adapter (0.0.7)
+    paper_trail (2.6.3)
+      activerecord (~> 3.0)
+      railties (~> 3.0)
     paperclip (3.0.4)
       activemodel (>= 3.0.0)
       activerecord (>= 3.0.0)
