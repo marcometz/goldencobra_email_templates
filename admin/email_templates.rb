@@ -19,7 +19,7 @@ ActiveAdmin.register GoldencobraEmailTemplates::EmailTemplate, :as => "Email Tem
     f.inputs "Allgemein" do
       f.input :title
       f.input :subject
-      f.input :template_tag, :as => :text, :hint => "Wird benoetigt fuer Abmelde-Link im Footer der E-Mail und sollte eindeutig sein. Keine Leerzeichen, sondern Unterstriche: beispiel_template_tag"
+      f.input :template_tag, :hint => "Wird benoetigt fuer Abmelde-Link im Footer der E-Mail und sollte eindeutig sein. Keine Leerzeichen, sondern Unterstriche: beispiel_template_tag"
       f.input :bcc
     end
     f.inputs "Mail Body" do
