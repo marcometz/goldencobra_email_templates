@@ -6,9 +6,12 @@ de:
                 other: "Email Vorlagen"
             goldencobra_email_templates/email_template:
                 one: "Email Vorlage"
-                other: "Email Vorlagen"                
+                other: "Email Vorlagen"              
         attributes:
             goldencobra_email_templates/email_template:
-                title: "Title"
+                title: "Titel"
                 subject: "Betreff"
-        
+    active_admin:
+        sidebars:
+            overview: "Überblick"
+            image_formates: "Bildgrößen"
