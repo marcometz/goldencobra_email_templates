@@ -28,3 +28,5 @@ test/dummy/.DS_Store
 .sass-cache/
 
 test/dummy/tmp/*
+
+/.rvmrc
