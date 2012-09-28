@@ -7,6 +7,7 @@ gem 'activeadmin', :git => "git://github.com/ikusei/active_admin.git", :require 
 gem 'goldencobra_events', :git => "git://github.com/ikusei/Goldencobra_Events.git"
 gem 'goldencobra', :git => "git://github.com/ikusei/Goldencobra.git"
 gem 'compass-rails'
+gem 'coffee-rails'
 
 gem "rspec-rails", :group => [:test, :development] # rspec in dev so the rake tasks run properly
 
