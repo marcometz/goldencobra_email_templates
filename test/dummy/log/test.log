@@ -16442,3 +16442,414 @@ Processing by GoldencobraEmailTemplates::EmailTemplatesController#show as HTML
   Rendered /Users/metz/git/goldencobra_email_templates/app/views/goldencobra_email_templates/email_templates/show.html.erb within layouts/goldencobra_email_templates/application (1.0ms)
 Completed 200 OK in 22ms (Views: 5.8ms | ActiveRecord: 2.7ms)
   [1m[35m (0.7ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36mGoldencobra::Setting Load (0.4ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` IS NULL AND `goldencobra_settings`.`title` = 'goldencobra_email_templates' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.4ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'headline' AND `goldencobra_settings`.`ancestry` = '1' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` IS NULL AND `goldencobra_settings`.`title` = 'goldencobra_events' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'agb_article_id' AND `goldencobra_settings`.`ancestry` = '3' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '3' AND `goldencobra_settings`.`title` = 'event' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '3/5' AND `goldencobra_settings`.`title` = 'registration_basket' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'headline' AND `goldencobra_settings`.`ancestry` = '3/5/6' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'greeting' AND `goldencobra_settings`.`ancestry` = '3/5/6' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'submit_text' AND `goldencobra_settings`.`ancestry` = '3/5/6' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'remove_text' AND `goldencobra_settings`.`ancestry` = '3/5/6' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'description' AND `goldencobra_settings`.`ancestry` = '3/5/6' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'completed' AND `goldencobra_settings`.`ancestry` = '3/5/6' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '3/5' AND `goldencobra_settings`.`title` = 'article_events' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'register_text' AND `goldencobra_settings`.`ancestry` = '3/5/13' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '3/5' AND `goldencobra_settings`.`title` = 'registration' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '3/5/15' AND `goldencobra_settings`.`title` = 'mailer' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'from' AND `goldencobra_settings`.`ancestry` = '3/5/15/16' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'subject' AND `goldencobra_settings`.`ancestry` = '3/5/15/16' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'reply_to' AND `goldencobra_settings`.`ancestry` = '3/5/15/16' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'price_informations' AND `goldencobra_settings`.`ancestry` = '3/5/15' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'child_registration_informations' AND `goldencobra_settings`.`ancestry` = '3/5/15' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'enter_user_data' AND `goldencobra_settings`.`ancestry` = '3/5/15' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'choose_event' AND `goldencobra_settings`.`ancestry` = '3/5/15' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'exclusive_description' AND `goldencobra_settings`.`ancestry` = '3/5/15' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '3/5/15' AND `goldencobra_settings`.`title` = 'webcode' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'title' AND `goldencobra_settings`.`ancestry` = '3/5/15/25' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'description' AND `goldencobra_settings`.`ancestry` = '3/5/15/25' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'submit' AND `goldencobra_settings`.`ancestry` = '3/5/15/25' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'completed' AND `goldencobra_settings`.`ancestry` = '3/5/15' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '3/5/15' AND `goldencobra_settings`.`title` = 'added' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'headline' AND `goldencobra_settings`.`ancestry` = '3/5/15/30' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '3/5/15' AND `goldencobra_settings`.`title` = 'to_add' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'headline' AND `goldencobra_settings`.`ancestry` = '3/5/15/32' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.4ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'submit' AND `goldencobra_settings`.`ancestry` = '3/5/15/32' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '3/5/15' AND `goldencobra_settings`.`title` = 'errors' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'no_events_selected' AND `goldencobra_settings`.`ancestry` = '3/5/15/35' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'no_user_selected' AND `goldencobra_settings`.`ancestry` = '3/5/15/35' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'user_not_exists' AND `goldencobra_settings`.`ancestry` = '3/5/15/35' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'no_price_groups_defined' AND `goldencobra_settings`.`ancestry` = '3/5/15/35' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '3/5/15' AND `goldencobra_settings`.`title` = 'user_form' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'title_summary' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'headline' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'sub_headline' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'description' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'account_description' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'user_fieldset_name' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'user_info_fieldset_name' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'company_fieldset_name' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'account_fieldset_name' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'company_adress_fieldset_name' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'next_step_label' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'submit' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'teilnahmebedingungen1' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'teilnahmebedingungen2' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'teilnahmebedingungen3' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'newsletter' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'agb' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '3/5/15/40' AND `goldencobra_settings`.`title` = 'errors' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'firstname' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/58' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'lastname' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/58' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'email' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/58' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'phone' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/58' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'fax' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/58' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'company_title' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/58' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'company_street' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/58' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'company_city' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/58' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'company_zip' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/58' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'company_country' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/58' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'password' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/58' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'password_confirmation' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/58' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'agb' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/58' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '3/5/15/40' AND `goldencobra_settings`.`title` = 'user_label' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'gender' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/72' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'gender_male' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/72' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'gender_female' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/72' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'title' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/72' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'firstname' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/72' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'lastname' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/72' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'function' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/72' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'email' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/72' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'phone' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/72' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'fax' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/72' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'googleplus' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/72' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'xing' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/72' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'linkedin' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/72' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'twitter' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/72' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'facebook' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/72' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '3/5/15/40' AND `goldencobra_settings`.`title` = 'company_label' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'title' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/88' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'legal_form' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/88' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'phone' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/88' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'fax' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/88' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'homepage' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/88' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'street' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/88' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'zip' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/88' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'city' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/88' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'region' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/88' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'country' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/88' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'sector' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/88' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '3/5/15/40' AND `goldencobra_settings`.`title` = 'account_label' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'password' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/100' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'confirm_password' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/100' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.4ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` IS NULL AND `goldencobra_settings`.`title` = 'goldencobra' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '103' AND `goldencobra_settings`.`title` = 'page' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'default_title_tag' AND `goldencobra_settings`.`ancestry` = '103/104' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '103' AND `goldencobra_settings`.`title` = 'article' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '103/106' AND `goldencobra_settings`.`title` = 'article_index' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'link_to_article' AND `goldencobra_settings`.`ancestry` = '103/106/107' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'url' AND `goldencobra_settings`.`ancestry` = '103' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '103' AND `goldencobra_settings`.`title` = 'facebook' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'appid' AND `goldencobra_settings`.`ancestry` = '103/110' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'opengraph_default_image' AND `goldencobra_settings`.`ancestry` = '103/110' LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'from'[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'from' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'subject'[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'subject' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'reply_to'[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'reply_to' LIMIT 1
+Connecting to database specified by database.yml
+  [1m[36mGoldencobra::Setting Load (1.8ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` IS NULL AND `goldencobra_settings`.`title` = 'goldencobra_email_templates' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.4ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'headline' AND `goldencobra_settings`.`ancestry` = '1' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` IS NULL AND `goldencobra_settings`.`title` = 'goldencobra_events' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'agb_article_id' AND `goldencobra_settings`.`ancestry` = '3' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '3' AND `goldencobra_settings`.`title` = 'event' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '3/5' AND `goldencobra_settings`.`title` = 'registration_basket' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'headline' AND `goldencobra_settings`.`ancestry` = '3/5/6' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'greeting' AND `goldencobra_settings`.`ancestry` = '3/5/6' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'submit_text' AND `goldencobra_settings`.`ancestry` = '3/5/6' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'remove_text' AND `goldencobra_settings`.`ancestry` = '3/5/6' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'description' AND `goldencobra_settings`.`ancestry` = '3/5/6' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'completed' AND `goldencobra_settings`.`ancestry` = '3/5/6' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '3/5' AND `goldencobra_settings`.`title` = 'article_events' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'register_text' AND `goldencobra_settings`.`ancestry` = '3/5/13' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '3/5' AND `goldencobra_settings`.`title` = 'registration' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '3/5/15' AND `goldencobra_settings`.`title` = 'mailer' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'from' AND `goldencobra_settings`.`ancestry` = '3/5/15/16' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'subject' AND `goldencobra_settings`.`ancestry` = '3/5/15/16' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'reply_to' AND `goldencobra_settings`.`ancestry` = '3/5/15/16' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'price_informations' AND `goldencobra_settings`.`ancestry` = '3/5/15' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'child_registration_informations' AND `goldencobra_settings`.`ancestry` = '3/5/15' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'enter_user_data' AND `goldencobra_settings`.`ancestry` = '3/5/15' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'choose_event' AND `goldencobra_settings`.`ancestry` = '3/5/15' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'exclusive_description' AND `goldencobra_settings`.`ancestry` = '3/5/15' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '3/5/15' AND `goldencobra_settings`.`title` = 'webcode' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'title' AND `goldencobra_settings`.`ancestry` = '3/5/15/25' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'description' AND `goldencobra_settings`.`ancestry` = '3/5/15/25' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'submit' AND `goldencobra_settings`.`ancestry` = '3/5/15/25' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'completed' AND `goldencobra_settings`.`ancestry` = '3/5/15' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '3/5/15' AND `goldencobra_settings`.`title` = 'added' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'headline' AND `goldencobra_settings`.`ancestry` = '3/5/15/30' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '3/5/15' AND `goldencobra_settings`.`title` = 'to_add' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'headline' AND `goldencobra_settings`.`ancestry` = '3/5/15/32' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'submit' AND `goldencobra_settings`.`ancestry` = '3/5/15/32' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '3/5/15' AND `goldencobra_settings`.`title` = 'errors' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'no_events_selected' AND `goldencobra_settings`.`ancestry` = '3/5/15/35' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'no_user_selected' AND `goldencobra_settings`.`ancestry` = '3/5/15/35' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'user_not_exists' AND `goldencobra_settings`.`ancestry` = '3/5/15/35' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'no_price_groups_defined' AND `goldencobra_settings`.`ancestry` = '3/5/15/35' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '3/5/15' AND `goldencobra_settings`.`title` = 'user_form' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'title_summary' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'headline' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'sub_headline' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'description' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'account_description' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'user_fieldset_name' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'user_info_fieldset_name' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'company_fieldset_name' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'account_fieldset_name' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'company_adress_fieldset_name' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'next_step_label' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'submit' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'teilnahmebedingungen1' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'teilnahmebedingungen2' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'teilnahmebedingungen3' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'newsletter' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'agb' AND `goldencobra_settings`.`ancestry` = '3/5/15/40' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '3/5/15/40' AND `goldencobra_settings`.`title` = 'errors' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'firstname' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/58' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'lastname' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/58' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'email' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/58' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'phone' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/58' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'fax' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/58' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'company_title' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/58' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'company_street' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/58' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'company_city' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/58' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'company_zip' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/58' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'company_country' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/58' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'password' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/58' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'password_confirmation' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/58' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'agb' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/58' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '3/5/15/40' AND `goldencobra_settings`.`title` = 'user_label' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'gender' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/72' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'gender_male' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/72' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'gender_female' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/72' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'title' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/72' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'firstname' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/72' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'lastname' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/72' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'function' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/72' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'email' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/72' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'phone' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/72' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'fax' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/72' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.2ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'googleplus' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/72' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'xing' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/72' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'linkedin' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/72' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'twitter' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/72' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'facebook' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/72' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '3/5/15/40' AND `goldencobra_settings`.`title` = 'company_label' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'title' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/88' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'legal_form' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/88' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'phone' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/88' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'fax' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/88' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'homepage' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/88' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'street' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/88' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'zip' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/88' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'city' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/88' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'region' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/88' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'country' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/88' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.4ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'sector' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/88' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '3/5/15/40' AND `goldencobra_settings`.`title` = 'account_label' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'password' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/100' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'confirm_password' AND `goldencobra_settings`.`ancestry` = '3/5/15/40/100' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.4ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` IS NULL AND `goldencobra_settings`.`title` = 'goldencobra' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '103' AND `goldencobra_settings`.`title` = 'page' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'default_title_tag' AND `goldencobra_settings`.`ancestry` = '103/104' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '103' AND `goldencobra_settings`.`title` = 'article' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '103/106' AND `goldencobra_settings`.`title` = 'article_index' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'link_to_article' AND `goldencobra_settings`.`ancestry` = '103/106/107' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'url' AND `goldencobra_settings`.`ancestry` = '103' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`ancestry` = '103' AND `goldencobra_settings`.`title` = 'facebook' LIMIT 1
+  [1m[36mGoldencobra::Setting Load (0.3ms)[0m  [1mSELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'appid' AND `goldencobra_settings`.`ancestry` = '103/110' LIMIT 1[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'opengraph_default_image' AND `goldencobra_settings`.`ancestry` = '103/110' LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'from'[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'from' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'subject'[0m
+  [1m[35mGoldencobra::Setting Load (0.3ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'subject' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'reply_to'[0m
+  [1m[35mGoldencobra::Setting Load (0.2ms)[0m  SELECT `goldencobra_settings`.* FROM `goldencobra_settings` WHERE `goldencobra_settings`.`title` = 'reply_to' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'admin@test.de' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `users` (`authentication_token`, `confirmation_sent_at`, `confirmation_token`, `confirmed_at`, `created_at`, `current_sign_in_at`, `current_sign_in_ip`, `email`, `encrypted_password`, `facebook`, `failed_attempts`, `fax`, `firstname`, `function`, `gender`, `googleplus`, `last_sign_in_at`, `last_sign_in_ip`, `lastname`, `linkedin`, `locked_at`, `password_salt`, `phone`, `remember_created_at`, `reset_password_sent_at`, `reset_password_token`, `sign_in_count`, `title`, `twitter`, `unconfirmed_email`, `unlock_token`, `updated_at`, `xing`) VALUES (NULL, NULL, NULL, '2012-01-09 13:28:58', '2012-06-08 08:43:51', NULL, NULL, 'admin@test.de', '$2a$04$E0P9x9eJWcl2m8WS4vXlFO5mQL.R.xnx283cEvKX3cd9C51yPgbMC', NULL, 0, NULL, 'Admin', NULL, NULL, NULL, NULL, NULL, 'Goldencobra', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-06-08 08:43:51', NULL)
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `goldencobra_roles` (`created_at`, `description`, `name`, `updated_at`) VALUES ('2012-06-08 08:43:51', NULL, 'admin', '2012-06-08 08:43:51')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `goldencobra_permissions` (`action`, `created_at`, `role_id`, `subject_class`, `subject_id`, `updated_at`) VALUES ('manage', '2012-06-08 08:43:51', NULL, ':all', '', '2012-06-08 08:43:51')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mUPDATE `goldencobra_permissions` SET `role_id` = 3, `updated_at` = '2012-06-08 08:43:51' WHERE `goldencobra_permissions`.`id` = 3[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO `goldencobra_roles_users` (`user_id`, `role_id`) VALUES (4, 3)
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Started GET "/admin/logout" for 127.0.0.1 at 2012-06-08 10:43:51 +0200
+Processing by ActiveAdmin::Devise::SessionsController#destroy as HTML
+Redirected to http://www.example.com/admin
+Completed 302 Found in 39ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-06-08 10:43:52 +0200
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 3ms
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-06-08 10:43:52 +0200
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra_email_templates/bundler/gems/active_admin-72fa5ef45168/app/views/active_admin/devise/shared/_links.erb (2.8ms)
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra_email_templates/bundler/gems/active_admin-72fa5ef45168/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (1184.6ms)
+Completed 200 OK in 1360ms (Views: 1357.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-06-08 10:43:53 +0200
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra_email_templates/bundler/gems/active_admin-72fa5ef45168/app/views/active_admin/devise/shared/_links.erb (1.1ms)
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra_email_templates/bundler/gems/active_admin-72fa5ef45168/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (105.2ms)
+Completed 200 OK in 111ms (Views: 109.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2012-06-08 10:43:54 +0200
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"admin@test.de", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@test.de' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2012-06-08 08:43:54', `current_sign_in_at` = '2012-06-08 08:43:54', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2012-06-08 08:43:54' WHERE `users`.`id` = 4
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/admin
+Completed 302 Found in 247ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-06-08 10:43:54 +0200
+Processing by Admin::DashboardController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 4 LIMIT 1
+  [1m[36mGoldencobra::Role Load (0.4ms)[0m  [1mSELECT `goldencobra_roles`.* FROM `goldencobra_roles` INNER JOIN `goldencobra_roles_users` ON `goldencobra_roles`.`id` = `goldencobra_roles_users`.`role_id` WHERE `goldencobra_roles_users`.`user_id` = 4[0m
+  [1m[35mGoldencobra::Permission Load (0.4ms)[0m  SELECT `goldencobra_permissions`.* FROM `goldencobra_permissions` WHERE `goldencobra_permissions`.`role_id` = 3
+  [1m[36mGoldencobra::Article Load (0.4ms)[0m  [1mSELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE (title IS NOT NULL) ORDER BY updated_at DESC LIMIT 5[0m
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra_email_templates/bundler/gems/active_admin-72fa5ef45168/app/views/active_admin/dashboard/index.html.arb (43.1ms)
+Completed 200 OK in 122ms (Views: 50.0ms | ActiveRecord: 1.6ms)
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `goldencobra_email_templates_email_templates` (`bcc`, `content_html`, `content_txt`, `created_at`, `custom_css`, `layout_file`, `subject`, `template_tag`, `title`, `updated_at`) VALUES (NULL, '<div><p>{{ user.firstname }} {{user.lastname}} My content body</p></div>', 'Emails are great', '2012-06-08 08:43:54', NULL, NULL, 'Awesome Email incoming', 'newsletter_monthly', 'Newsletter Monthly #1', '2012-06-08 08:43:54')[0m
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `goldencobra_email_templates_email_templates` (`bcc`, `content_html`, `content_txt`, `created_at`, `custom_css`, `layout_file`, `subject`, `template_tag`, `title`, `updated_at`) VALUES (NULL, '', 'Emails are great', '2012-06-08 08:43:55', NULL, NULL, 'Awesome Email incoming', 'newsletter_monthly', 'Newsletter Monthly #2', '2012-06-08 08:43:55')
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Started GET "/goldencobra_email_templates/email_templates/archiv?tag=newsletter_monthly" for 127.0.0.1 at 2012-06-08 10:43:55 +0200
+Processing by GoldencobraEmailTemplates::EmailTemplatesController#archiv as HTML
+  Parameters: {"tag"=>"newsletter_monthly"}
+  [1m[35mGoldencobraEmailTemplates::EmailTemplate Load (0.4ms)[0m  SELECT `goldencobra_email_templates_email_templates`.* FROM `goldencobra_email_templates_email_templates` WHERE (template_tag = 'newsletter_monthly')
+  Rendered /Users/metz/git/goldencobra_email_templates/app/views/goldencobra_email_templates/email_templates/archiv.html.erb within layouts/goldencobra_email_templates/application (3.5ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'admin@test.de' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `users` (`authentication_token`, `confirmation_sent_at`, `confirmation_token`, `confirmed_at`, `created_at`, `current_sign_in_at`, `current_sign_in_ip`, `email`, `encrypted_password`, `facebook`, `failed_attempts`, `fax`, `firstname`, `function`, `gender`, `googleplus`, `last_sign_in_at`, `last_sign_in_ip`, `lastname`, `linkedin`, `locked_at`, `password_salt`, `phone`, `remember_created_at`, `reset_password_sent_at`, `reset_password_token`, `sign_in_count`, `title`, `twitter`, `unconfirmed_email`, `unlock_token`, `updated_at`, `xing`) VALUES (NULL, NULL, NULL, '2012-01-09 13:28:58', '2012-06-08 08:43:55', NULL, NULL, 'admin@test.de', '$2a$04$RJLthGw1O5OWIHrtTfGH4u0e97WGktXfS4mghQ.KAhhJ8yscCCaf2', NULL, 0, NULL, 'Admin', NULL, NULL, NULL, NULL, NULL, 'Goldencobra', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-06-08 08:43:55', NULL)[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `goldencobra_roles` (`created_at`, `description`, `name`, `updated_at`) VALUES ('2012-06-08 08:43:55', NULL, 'admin', '2012-06-08 08:43:55')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `goldencobra_permissions` (`action`, `created_at`, `role_id`, `subject_class`, `subject_id`, `updated_at`) VALUES ('manage', '2012-06-08 08:43:55', NULL, ':all', '', '2012-06-08 08:43:55')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  UPDATE `goldencobra_permissions` SET `role_id` = 4, `updated_at` = '2012-06-08 08:43:55' WHERE `goldencobra_permissions`.`id` = 4
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO `goldencobra_roles_users` (`user_id`, `role_id`) VALUES (5, 4)[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/admin/logout" for 127.0.0.1 at 2012-06-08 10:43:55 +0200
+Processing by ActiveAdmin::Devise::SessionsController#destroy as HTML
+Redirected to http://www.example.com/admin
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-06-08 10:43:55 +0200
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-06-08 10:43:55 +0200
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra_email_templates/bundler/gems/active_admin-72fa5ef45168/app/views/active_admin/devise/shared/_links.erb (1.3ms)
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra_email_templates/bundler/gems/active_admin-72fa5ef45168/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (111.8ms)
+Completed 200 OK in 118ms (Views: 116.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-06-08 10:43:56 +0200
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra_email_templates/bundler/gems/active_admin-72fa5ef45168/app/views/active_admin/devise/shared/_links.erb (1.1ms)
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra_email_templates/bundler/gems/active_admin-72fa5ef45168/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (28.6ms)
+Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2012-06-08 10:43:56 +0200
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"admin@test.de", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@test.de' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2012-06-08 08:43:56', `current_sign_in_at` = '2012-06-08 08:43:56', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2012-06-08 08:43:56' WHERE `users`.`id` = 5[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/admin
+Completed 302 Found in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-06-08 10:43:56 +0200
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35mGoldencobra::Role Load (0.4ms)[0m  SELECT `goldencobra_roles`.* FROM `goldencobra_roles` INNER JOIN `goldencobra_roles_users` ON `goldencobra_roles`.`id` = `goldencobra_roles_users`.`role_id` WHERE `goldencobra_roles_users`.`user_id` = 5
+  [1m[36mGoldencobra::Permission Load (0.2ms)[0m  [1mSELECT `goldencobra_permissions`.* FROM `goldencobra_permissions` WHERE `goldencobra_permissions`.`role_id` = 4[0m
+  [1m[35mGoldencobra::Article Load (2.9ms)[0m  SELECT `goldencobra_articles`.* FROM `goldencobra_articles` WHERE (title IS NOT NULL) ORDER BY updated_at DESC LIMIT 5
+  Rendered /Users/metz/.rvm/gems/ruby-1.9.2-p290@goldencobra_email_templates/bundler/gems/active_admin-72fa5ef45168/app/views/active_admin/dashboard/index.html.arb (41.1ms)
+Completed 200 OK in 131ms (Views: 39.5ms | ActiveRecord: 3.9ms)
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `goldencobra_email_templates_email_templates` (`bcc`, `content_html`, `content_txt`, `created_at`, `custom_css`, `layout_file`, `subject`, `template_tag`, `title`, `updated_at`) VALUES (NULL, '<div><p>{{ user.firstname }} {{user.lastname}} My content body</p></div>', 'Emails are great', '2012-06-08 08:43:56', NULL, NULL, 'Awesome Email incoming', 'newsletter_monthly', 'Newsletter Monthly #1', '2012-06-08 08:43:56')
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `goldencobra_email_templates_email_templates` (`bcc`, `content_html`, `content_txt`, `created_at`, `custom_css`, `layout_file`, `subject`, `template_tag`, `title`, `updated_at`) VALUES (NULL, '', 'Emails are great', '2012-06-08 08:43:56', NULL, NULL, 'Awesome Email incoming', 'newsletter_monthly', 'Newsletter Monthly #2', '2012-06-08 08:43:56')[0m
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/goldencobra_email_templates/email_templates/archiv?tag=newsletter_monthly" for 127.0.0.1 at 2012-06-08 10:43:57 +0200
+Processing by GoldencobraEmailTemplates::EmailTemplatesController#archiv as HTML
+  Parameters: {"tag"=>"newsletter_monthly"}
+  [1m[36mGoldencobraEmailTemplates::EmailTemplate Load (0.4ms)[0m  [1mSELECT `goldencobra_email_templates_email_templates`.* FROM `goldencobra_email_templates_email_templates` WHERE (template_tag = 'newsletter_monthly')[0m
+  Rendered /Users/metz/git/goldencobra_email_templates/app/views/goldencobra_email_templates/email_templates/archiv.html.erb within layouts/goldencobra_email_templates/application (2.3ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/goldencobra_email_templates/email_templates/show/7" for 127.0.0.1 at 2012-06-08 10:43:57 +0200
+Processing by GoldencobraEmailTemplates::EmailTemplatesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mGoldencobraEmailTemplates::EmailTemplate Load (0.4ms)[0m  SELECT `goldencobra_email_templates_email_templates`.* FROM `goldencobra_email_templates_email_templates` WHERE `goldencobra_email_templates_email_templates`.`id` = 7 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'no_reply@goldencobra.de' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'no_reply@goldencobra.de' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `users` (`authentication_token`, `confirmation_sent_at`, `confirmation_token`, `confirmed_at`, `created_at`, `current_sign_in_at`, `current_sign_in_ip`, `email`, `encrypted_password`, `facebook`, `failed_attempts`, `fax`, `firstname`, `function`, `gender`, `googleplus`, `last_sign_in_at`, `last_sign_in_ip`, `lastname`, `linkedin`, `locked_at`, `password_salt`, `phone`, `remember_created_at`, `reset_password_sent_at`, `reset_password_token`, `sign_in_count`, `title`, `twitter`, `unconfirmed_email`, `unlock_token`, `updated_at`, `xing`) VALUES (NULL, NULL, NULL, NULL, '2012-06-08 08:43:57', NULL, NULL, 'no_reply@goldencobra.de', '$2a$04$02HGPfYzsEkhFh71S2Ynju4.x6B/KsPntl8u8gJCoaw.bENPtJotK', NULL, 0, NULL, 'Max', NULL, NULL, NULL, NULL, NULL, 'Mustermann', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-06-08 08:43:57', NULL)
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered /Users/metz/git/goldencobra_email_templates/app/views/goldencobra_email_templates/email_templates/show.html.erb within layouts/goldencobra_email_templates/application (1.0ms)
+Completed 200 OK in 15ms (Views: 5.4ms | ActiveRecord: 1.5ms)
+  [1m[35m (0.8ms)[0m  ROLLBACK
