@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120712143251) do
+ActiveRecord::Schema.define(:version => 20130213141376) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.integer  "resource_id",   :null => false
@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(:version => 20120712143251) do
     t.integer  "image_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.string   "position"
   end
 
   create_table "goldencobra_article_widgets", :force => true do |t|
@@ -55,34 +56,69 @@ ActiveRecord::Schema.define(:version => 20120712143251) do
 
   create_table "goldencobra_articles", :force => true do |t|
     t.string   "title"
-    t.datetime "created_at",                                  :null => false
-    t.datetime "updated_at",                                  :null => false
+    t.datetime "created_at",                                                          :null => false
+    t.datetime "updated_at",                                                          :null => false
     t.string   "url_name"
     t.string   "slug"
     t.text     "content"
     t.text     "teaser"
     t.string   "ancestry"
-    t.boolean  "startpage",                :default => false
-    t.boolean  "active",                   :default => true
+    t.boolean  "startpage",                        :default => false
+    t.boolean  "active",                           :default => true
     t.string   "subtitle"
     t.text     "summary"
     t.text     "context_info"
     t.string   "canonical_url"
-    t.boolean  "robots_no_index",          :default => false
+    t.boolean  "robots_no_index",                  :default => false
     t.string   "breadcrumb"
     t.string   "template_file"
     t.integer  "article_for_index_id"
-    t.integer  "article_for_index_levels", :default => 0
-    t.integer  "article_for_index_count",  :default => 0
+    t.integer  "article_for_index_levels",         :default => 0
+    t.integer  "article_for_index_count",          :default => 0
     t.boolean  "enable_social_sharing"
-    t.boolean  "article_for_index_images", :default => false
-    t.boolean  "cacheable",                :default => true
+    t.boolean  "article_for_index_images",         :default => false
+    t.boolean  "cacheable",                        :default => true
     t.string   "image_gallery_tags"
+    t.integer  "event_id"
+    t.integer  "event_levels",                     :default => 0
+    t.string   "eventmoduletype"
+    t.text     "artist_list"
+    t.integer  "event_for_artists_id"
+    t.integer  "event_for_artists_levels"
+    t.text     "sponsor_list"
+    t.integer  "event_for_sponsor_id"
+    t.integer  "event_for_sponsor_levels",         :default => 0
     t.string   "article_type"
+    t.string   "external_url_redirect"
+    t.string   "index_of_articles_tagged_with"
+    t.string   "sort_order"
+    t.boolean  "reverse_sort"
+    t.string   "author"
+    t.integer  "sorter_limit"
+    t.string   "not_tagged_with"
+    t.boolean  "use_frontend_tags",                :default => false
+    t.string   "dynamic_redirection",              :default => "false"
+    t.boolean  "redirection_target_in_new_window", :default => false
+    t.boolean  "commentable",                      :default => false
+    t.datetime "active_since",                     :default => '2013-02-06 14:14:05'
+    t.string   "redirect_link_title"
   end
 
   add_index "goldencobra_articles", ["ancestry"], :name => "index_goldencobra_articles_on_ancestry"
   add_index "goldencobra_articles", ["slug"], :name => "index_goldencobra_articles_on_slug"
+
+  create_table "goldencobra_comments", :force => true do |t|
+    t.integer  "article_id"
+    t.integer  "commentator_id"
+    t.string   "commentator_type"
+    t.text     "content"
+    t.boolean  "active",           :default => true
+    t.boolean  "approved",         :default => false
+    t.boolean  "reported",         :default => false
+    t.string   "ancestry"
+    t.datetime "created_at",                          :null => false
+    t.datetime "updated_at",                          :null => false
+  end
 
   create_table "goldencobra_email_templates_email_templates", :force => true do |t|
     t.string   "title"
@@ -97,12 +133,190 @@ ActiveRecord::Schema.define(:version => 20120712143251) do
     t.string   "template_tag"
   end
 
+  create_table "goldencobra_events_artist_events", :force => true do |t|
+    t.integer  "artist_id"
+    t.integer  "event_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "goldencobra_events_artist_images", :force => true do |t|
+    t.integer  "image_id"
+    t.integer  "artist_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "goldencobra_events_artist_sponsors", :force => true do |t|
+    t.integer  "artist_id"
+    t.integer  "sponsor_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "goldencobra_events_artists", :force => true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.string   "url_link"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.string   "telephone"
+    t.string   "email"
+    t.integer  "location_id"
+  end
+
+  create_table "goldencobra_events_companies", :force => true do |t|
+    t.string   "title"
+    t.string   "legal_form"
+    t.integer  "location_id"
+    t.string   "phone"
+    t.string   "fax"
+    t.string   "homepage"
+    t.string   "sector"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "goldencobra_events_event_pricegroups", :force => true do |t|
+    t.integer  "event_id"
+    t.integer  "pricegroup_id"
+    t.float    "price",                       :default => 0.0
+    t.integer  "max_number_of_participators", :default => 0
+    t.datetime "cancelation_until"
+    t.datetime "start_reservation"
+    t.datetime "end_reservation"
+    t.boolean  "available",                   :default => true
+    t.datetime "created_at",                                    :null => false
+    t.datetime "updated_at",                                    :null => false
+    t.string   "webcode"
+  end
+
+  create_table "goldencobra_events_event_registrations", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "event_pricegroup_id"
+    t.boolean  "canceled",            :default => false
+    t.datetime "canceled_at"
+    t.datetime "created_at",                             :null => false
+    t.datetime "updated_at",                             :null => false
+  end
+
+  create_table "goldencobra_events_event_sponsors", :force => true do |t|
+    t.integer  "event_id"
+    t.integer  "sponsor_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "goldencobra_events_events", :force => true do |t|
+    t.string   "ancestry"
+    t.string   "title"
+    t.text     "description"
+    t.datetime "created_at",                                     :null => false
+    t.datetime "updated_at",                                     :null => false
+    t.boolean  "active",                      :default => true
+    t.string   "external_link"
+    t.integer  "max_number_of_participators", :default => 0
+    t.string   "type_of_event"
+    t.string   "type_of_registration"
+    t.boolean  "exclusive",                   :default => false
+    t.datetime "start_date"
+    t.datetime "end_date"
+    t.integer  "panel_id"
+    t.integer  "venue_id"
+    t.integer  "teaser_image_id"
+  end
+
+  create_table "goldencobra_events_panel_sponsors", :force => true do |t|
+    t.integer  "panel_id"
+    t.integer  "sponsor_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "goldencobra_events_panels", :force => true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.string   "link_url"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "goldencobra_events_pricegroups", :force => true do |t|
+    t.string   "title"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "goldencobra_events_registration_users", :force => true do |t|
+    t.integer  "user_id"
+    t.boolean  "gender"
+    t.string   "email"
+    t.string   "title"
+    t.string   "firstname"
+    t.string   "lastname"
+    t.string   "function"
+    t.string   "phone"
+    t.boolean  "agb"
+    t.integer  "company_id"
+    t.datetime "created_at",                                   :null => false
+    t.datetime "updated_at",                                   :null => false
+    t.string   "type_of_registration", :default => "Webseite"
+    t.text     "comment"
+    t.datetime "invoice_sent"
+    t.datetime "payed_on"
+    t.datetime "first_reminder_sent"
+    t.datetime "second_reminder_sent"
+  end
+
+  create_table "goldencobra_events_sponsor_images", :force => true do |t|
+    t.integer  "sponsor_id"
+    t.integer  "image_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "goldencobra_events_sponsors", :force => true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.string   "link_url"
+    t.string   "size_of_sponsorship"
+    t.string   "type_of_sponsorship"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
+    t.integer  "location_id"
+    t.string   "telephone"
+    t.string   "email"
+    t.integer  "logo_id"
+  end
+
+  create_table "goldencobra_events_venues", :force => true do |t|
+    t.integer  "location_id"
+    t.string   "title"
+    t.text     "description"
+    t.string   "link_url"
+    t.string   "phone"
+    t.string   "email"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
   create_table "goldencobra_helps", :force => true do |t|
     t.string   "title"
     t.text     "description"
     t.string   "url"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+  end
+
+  create_table "goldencobra_imports", :force => true do |t|
+    t.text     "assignment"
+    t.string   "target_model"
+    t.boolean  "successful"
+    t.integer  "upload_id"
+    t.string   "separator",    :default => ","
+    t.text     "result"
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
   end
 
   create_table "goldencobra_locations", :force => true do |t|
@@ -113,9 +327,12 @@ ActiveRecord::Schema.define(:version => 20120712143251) do
     t.string   "zip"
     t.string   "region"
     t.string   "country"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
     t.string   "title"
+    t.string   "locateable_type"
+    t.integer  "locateable_id"
+    t.string   "street_number"
   end
 
   create_table "goldencobra_menues", :force => true do |t|
@@ -130,6 +347,7 @@ ActiveRecord::Schema.define(:version => 20120712143251) do
     t.text     "description"
     t.string   "call_to_action_name"
     t.string   "description_title"
+    t.integer  "image_id"
   end
 
   add_index "goldencobra_menues", ["ancestry"], :name => "index_goldencobra_menues_on_ancestry"
@@ -147,8 +365,9 @@ ActiveRecord::Schema.define(:version => 20120712143251) do
     t.string   "subject_class"
     t.string   "subject_id"
     t.integer  "role_id"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.datetime "created_at",                   :null => false
+    t.datetime "updated_at",                   :null => false
+    t.integer  "sorter_id",     :default => 0
   end
 
   create_table "goldencobra_roles", :force => true do |t|
@@ -159,18 +378,20 @@ ActiveRecord::Schema.define(:version => 20120712143251) do
   end
 
   create_table "goldencobra_roles_users", :id => false, :force => true do |t|
-    t.integer  "user_id"
+    t.integer  "operator_id"
     t.integer  "role_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                        :null => false
+    t.datetime "updated_at",                        :null => false
+    t.string   "operator_type", :default => "User"
   end
 
   create_table "goldencobra_settings", :force => true do |t|
     t.string   "title"
     t.string   "value"
     t.string   "ancestry"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                       :null => false
+    t.datetime "updated_at",                       :null => false
+    t.string   "data_type",  :default => "string"
   end
 
   create_table "goldencobra_uploads", :force => true do |t|
@@ -182,6 +403,10 @@ ActiveRecord::Schema.define(:version => 20120712143251) do
     t.integer  "image_file_size"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
+    t.integer  "attachable_id"
+    t.string   "attachable_type"
+    t.string   "alt_text"
+    t.integer  "sorter_number"
   end
 
   create_table "goldencobra_vita", :force => true do |t|
@@ -201,10 +426,20 @@ ActiveRecord::Schema.define(:version => 20120712143251) do
     t.text     "content"
     t.string   "css_name"
     t.boolean  "active"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                  :null => false
+    t.datetime "updated_at",                  :null => false
     t.string   "id_name"
     t.integer  "sorter"
+    t.text     "mobile_content"
+    t.string   "teaser"
+    t.boolean  "default"
+    t.text     "description"
+    t.string   "offline_days"
+    t.boolean  "offline_time_active"
+    t.text     "alternative_content"
+    t.date     "offline_date_start"
+    t.date     "offline_date_end"
+    t.text     "offline_time_week_start_end"
   end
 
   create_table "taggings", :force => true do |t|
@@ -225,8 +460,8 @@ ActiveRecord::Schema.define(:version => 20120712143251) do
   end
 
   create_table "users", :force => true do |t|
-    t.string   "email",                  :default => "", :null => false
-    t.string   "encrypted_password",     :default => "", :null => false
+    t.string   "email",                  :default => "",    :null => false
+    t.string   "encrypted_password",     :default => "",    :null => false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
@@ -244,8 +479,8 @@ ActiveRecord::Schema.define(:version => 20120712143251) do
     t.string   "unlock_token"
     t.datetime "locked_at"
     t.string   "authentication_token"
-    t.datetime "created_at",                             :null => false
-    t.datetime "updated_at",                             :null => false
+    t.datetime "created_at",                                :null => false
+    t.datetime "updated_at",                                :null => false
     t.boolean  "gender"
     t.string   "title"
     t.string   "firstname"
@@ -258,6 +493,9 @@ ActiveRecord::Schema.define(:version => 20120712143251) do
     t.string   "linkedin"
     t.string   "xing"
     t.string   "googleplus"
+    t.integer  "company_id"
+    t.boolean  "newsletter"
+    t.boolean  "enable_expert_mode",     :default => false
   end
 
   add_index "users", ["authentication_token"], :name => "index_users_on_authentication_token", :unique => true
@@ -276,5 +514,40 @@ ActiveRecord::Schema.define(:version => 20120712143251) do
   end
 
   add_index "versions", ["item_type", "item_id"], :name => "index_versions_on_item_type_and_item_id"
+
+  create_table "visitors", :force => true do |t|
+    t.string   "email",                  :default => "",    :null => false
+    t.string   "encrypted_password",     :default => "",    :null => false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          :default => 0
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
+    t.datetime "created_at",                                :null => false
+    t.datetime "updated_at",                                :null => false
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "provider"
+    t.string   "uid"
+    t.boolean  "agb",                    :default => false
+    t.boolean  "newsletter"
+    t.string   "confirmation_token"
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
+    t.string   "unconfirmed_email"
+    t.integer  "failed_attempts"
+    t.string   "unlock_token"
+    t.datetime "locked_at"
+    t.string   "authentication_token"
+    t.string   "username"
+    t.string   "loginable_type"
+    t.integer  "loginable_id"
+  end
+
+  add_index "visitors", ["email"], :name => "index_visitors_on_email", :unique => true
+  add_index "visitors", ["reset_password_token"], :name => "index_visitors_on_reset_password_token", :unique => true
 
 end
