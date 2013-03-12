@@ -4,8 +4,8 @@ gemspec
 
 # jquery-rails is used by the dummy application
 gem 'activeadmin', :git => "git://github.com/ikusei/active_admin.git", :require => "activeadmin"
-gem 'goldencobra_events', :git => "git://github.com/ikusei/Goldencobra_Events.git"
-gem 'goldencobra', :git => "git://github.com/ikusei/Goldencobra.git"
+gem 'goldencobra_events', :git => "ssh://git@git.ikusei.de:7999/GC/goldencobra-events.git"
+gem 'goldencobra', :git => "ssh://git@git.ikusei.de:7999/GC/basis-modul.git"
 gem 'compass-rails'
 gem 'coffee-rails'
 
@@ -22,7 +22,7 @@ end
 group :test do
   gem 'mysql2'
   gem 'cucumber'
-  gem 'cucumber-rails', '~> 1.3.0' 
+  gem 'cucumber-rails'
   gem "factory_girl_rails"
   gem 'database_cleaner'
   gem 'capybara'
