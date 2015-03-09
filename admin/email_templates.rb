@@ -1,6 +1,6 @@
 ActiveAdmin.register GoldencobraEmailTemplates::EmailTemplate, :as => "Email Template" do
 
-  menu :parent => "Content-Management", :label => "Email Vorlagen", :if => proc{can?(:update, Goldencobra::Article)}
+  menu :parent => "Einstellungen", :label => "Email Vorlagen", :if => proc{can?(:update, GoldencobraEmailTemplates)}
 
   controller.authorize_resource :class => GoldencobraEmailTemplates::EmailTemplate
   filter :title
